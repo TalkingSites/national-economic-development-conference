@@ -1,0 +1,115 @@
+/* ==========================================================================
+   Conference schedule. Days are panels, slots are cards, breaks are dividers.
+   ========================================================================== */
+
+:root {
+  --t-plenary:  #2a2a86;
+  --t-breakout: #83298a;
+  --t-workshop: #5a2a88;
+  --t-tour:     #a2246f;
+  --t-social:   #bf2360;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --t-plenary: #8f8ff5; --t-breakout: #c07ae8; --t-workshop: #a98bf0;
+    --t-tour: #f070b0; --t-social: #ff6f9c;
+  }
+}
+:root[data-theme="dark"] {
+  --t-plenary: #8f8ff5; --t-breakout: #c07ae8; --t-workshop: #a98bf0;
+  --t-tour: #f070b0; --t-social: #ff6f9c;
+}
+.slot--plenary  { --t: var(--t-plenary); }
+.slot--breakout { --t: var(--t-breakout); }
+.slot--workshop { --t: var(--t-workshop); }
+.slot--tour     { --t: var(--t-tour); }
+.slot--social   { --t: var(--t-social); }
+
+/* --- Day switcher ------------------------------------------------------- */
+.sched-days {
+  position: sticky; top: 68px; z-index: 40;
+  display: flex; flex-wrap: wrap; gap: .4rem;
+  padding-block: var(--s4);
+  background: color-mix(in srgb, var(--ground) 93%, transparent);
+  backdrop-filter: blur(10px);
+}
+.sched-days__link {
+  display: grid; gap: .1rem; text-decoration: none;
+  padding: .5rem .95rem; border-radius: var(--r-flat);
+  border: 1px solid var(--line); color: var(--text-soft);
+  transition: border-color var(--dur) var(--ease), color var(--dur) var(--ease),
+              background-color var(--dur) var(--ease);
+}
+.sched-days__link:hover { border-color: var(--accent); color: var(--accent); }
+.sched-days__link[aria-current="true"] { background: var(--slab); border-color: var(--slab); color: var(--text-on-slab); }
+.sched-days__link[aria-current="true"] .sched-days__n { color: var(--text-on-slab-mute); }
+.sched-days__n { color: var(--text-mute); font-size: var(--step--2); }
+.sched-days__date { font-family: var(--font-display); font-weight: 700; font-stretch: 108%;
+                    font-size: var(--step-0); letter-spacing: -.01em; }
+
+/* --- Day panel ---------------------------------------------------------- */
+.sday { scroll-margin-top: 8.5rem; margin-top: var(--s7); }
+.sday__head {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s3) var(--s5);
+  background: var(--slab); color: var(--text-on-slab);
+  padding: var(--s5) clamp(var(--s4), 3vw, var(--s6));
+  border-radius: var(--r-flat) var(--r-flat) 0 0;
+}
+.sday__n { color: var(--text-on-slab-mute); }
+.sday__title { font-size: var(--step-3); font-stretch: 116%; margin-right: auto; }
+.sday__meta { color: var(--text-on-slab-soft); font-family: var(--font-display); font-weight: 600; }
+
+.sday__body {
+  border: 1px solid var(--line); border-top: 0;
+  border-radius: 0 0 var(--r-flat) var(--r-flat);
+  background: var(--surface);
+  padding: clamp(var(--s4), 2.5vw, var(--s6));
+  display: grid; gap: var(--s4);
+}
+
+/* --- A session slot ----------------------------------------------------- */
+.slot {
+  display: grid; gap: var(--s3) var(--s6);
+  padding: var(--s5); border-radius: var(--r-flat);
+  background: var(--ground);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--t, var(--accent));
+}
+@media (min-width: 800px) { .slot { grid-template-columns: 8.5rem minmax(0, 1fr); } }
+
+.slot__when { display: grid; gap: .2rem; align-content: start; }
+.slot__range {
+  font-family: var(--font-display); font-weight: 700; font-stretch: 106%;
+  font-size: var(--step-1); line-height: 1.15; letter-spacing: -.02em; color: var(--t);
+  display: flex; align-items: center; gap: .35rem; flex-wrap: wrap;
+}
+.slot__dash { width: .7rem; height: 1.5px; background: currentColor; opacity: .55; }
+.slot__dur  { color: var(--text-mute); font-size: var(--step--2); }
+.slot__type { color: var(--t); font-size: var(--step--2); margin-top: .35rem; }
+
+.slot__what { display: grid; gap: var(--s3); align-content: start; }
+.slot__title {
+  font-family: var(--font-display); font-weight: 700; font-stretch: 108%;
+  font-size: var(--step-2); line-height: 1.18; letter-spacing: -.018em; margin: 0;
+}
+.slot__sub  { color: var(--text-soft); font-size: var(--step-0); }
+.slot__copy { color: var(--text-soft); max-width: 72ch; line-height: 1.62; }
+.slot__copy p + p { margin-top: .6em; }
+.slot__room { color: var(--text-mute); }
+
+.slot__speakers { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .55rem 1.2rem; }
+.slot__speaker { display: flex; align-items: center; gap: .55rem; font-size: var(--step--1); color: var(--text); }
+.slot__speaker img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; background: var(--surface-sunk); }
+
+/* --- A break ------------------------------------------------------------ */
+.slotbreak {
+  display: flex; align-items: baseline; gap: var(--s4);
+  padding: .55rem var(--s5);
+  color: var(--text-mute);
+}
+.slotbreak::after { content: ""; flex: 1; height: 1px; background: var(--line); order: 2; }
+.slotbreak__time { font-family: var(--font-display); font-weight: 600; font-size: var(--step--1); order: 0; }
+.slotbreak__name { font-size: var(--step--1); order: 1; white-space: nowrap; }
+.slotbreak__dur  { font-size: var(--step--2); order: 3; }
+
+.sched-note { padding-block: var(--s6) 0; color: var(--text-mute); }

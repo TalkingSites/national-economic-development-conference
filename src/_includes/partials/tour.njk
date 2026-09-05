@@ -1,0 +1,23 @@
+{# tour: one entry from _data/tours.json #}
+<article class="tour{% if tour.optional %} tour--optional{% endif %}">
+  <div class="tour__rail"><span class="tour__num num">{{ tour.number }}</span><span class="tour__line"></span></div>
+  <div class="tour__body">
+    <div class="tour__text stack-s">
+      <h2 class="h-m">{{ tour.title }}</h2>
+      <p class="tour__date util">{{ tour.date }}</p>
+      <div class="prose"><p>{{ tour.body }}</p></div>
+    </div>
+    <div class="tour__media"><img src="{{ tour.image }}" alt="" loading="lazy"></div>
+    <div class="tour__detail">
+      <dl class="spec">
+        {% for f in tour.facts %}
+        <div class="spec__row"><dt class="util spec__k">{{ f.label }}</dt><dd class="spec__v num">{{ f.value }}</dd></div>
+        {% endfor %}
+      </dl>
+      <ul class="marks">
+        {% for h in tour.highlights %}<li class="mark">{{ h }}</li>{% endfor %}
+      </ul>
+      {% if tour.footnote %}<p class="tour__note">{{ tour.footnote }}</p>{% endif %}
+    </div>
+  </div>
+</article>

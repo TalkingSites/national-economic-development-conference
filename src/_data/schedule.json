@@ -1,0 +1,517 @@
+{
+ "days": [
+  {
+   "n": 1,
+   "id": "day-1",
+   "weekday": "Tuesday",
+   "date": "13 October",
+   "iso": "2026-10-13",
+   "short": "Tue 13",
+   "sessions": [
+    {
+     "start": "17:00",
+     "end": "20:00",
+     "mins": 180,
+     "duration": "3h",
+     "title": "NEDC26 Welcome Reception",
+     "subtitle": "Mures Tasmania | Sponsored by Lucid Economics",
+     "type": "Social Function",
+     "typeKey": "social",
+     "room": null,
+     "speakers": [],
+     "body": [
+      "Begin your NEDC26 experience in style with an evening on Hobart's spectacular waterfront at the award-winning Mures Upper Deck. Set against the sparkling backdrop of Victoria Dock, the Welcome Reception invites delegates to unwind and connect over exceptional local produce, premium Tasmanian hospitality and sweeping harbour views.",
+      "With its refined atmosphere and unmistakable sense of place, this opening event offers a memorable introduction to both the conference and the destination, bringing together industry leaders and delegates for an evening of conversation, connection and celebration in one of Hobart's most iconic settings.",
+      "The Welcome Reception is included with full conference registration. Additional tickets may be purchased separately"
+     ]
+    }
+   ],
+   "start": "17:00",
+   "end": "20:00"
+  },
+  {
+   "n": 2,
+   "id": "day-2",
+   "weekday": "Wednesday",
+   "date": "14 October",
+   "iso": "2026-10-14",
+   "short": "Wed 14",
+   "sessions": [
+    {
+     "start": "07:45",
+     "end": "08:30",
+     "mins": 45,
+     "duration": "45m",
+     "title": "Coffee & Registrations",
+     "subtitle": "",
+     "type": "Networking / Refreshments",
+     "typeKey": "break",
+     "room": null,
+     "speakers": [],
+     "body": [
+      "Arrive early, collect your name badge, grab a coffee and connect with fellow delegates before the official NEDC26 program begins."
+     ]
+    },
+    {
+     "start": "08:30",
+     "end": "09:10",
+     "mins": 40,
+     "duration": "40m",
+     "title": "Official Opening & Welcome",
+     "subtitle": "",
+     "type": "Plenary Session",
+     "typeKey": "plenary",
+     "room": null,
+     "speakers": [
+      {
+       "name": "The Hon Jeremy Rockliff MP",
+       "photo": "/assets/images/speakers/the-hon-jeremy-rockliff-mp.jpg"
+      },
+      {
+       "name": "Jeremy Crawford",
+       "photo": "/assets/images/speakers/jeremy-crawford.jpg"
+      },
+      {
+       "name": "Jacqueline Brinkman GAICD",
+       "photo": "/assets/images/speakers/jacqueline-brinkman-gaicd.jpg"
+      }
+     ],
+     "body": [
+      "Join us for the official opening of NEDC26, beginning with a Welcome to Country and opening remarks as we welcome delegates to Hobart, Nipaluna. This session will set the scene for the conference ahead and introduce the ideas, themes and conversations that will shape NEDC26."
+     ]
+    },
+    {
+     "start": "09:10",
+     "end": "09:30",
+     "mins": 20,
+     "duration": "20m",
+     "title": "The Evolution of Brand Tasmania",
+     "subtitle": "Presented by Jess Radford, Acting CEO, Brand Tasmania",
+     "type": "Plenary Session",
+     "typeKey": "plenary",
+     "room": null,
+     "speakers": [
+      {
+       "name": "Jess Radford",
+       "photo": "/assets/images/speakers/jess-radford.jpg"
+      }
+     ],
+     "body": [
+      "Explore the evolution of Brand Tasmania and discover how the state's brand has been shaped, strengthened and brought to life to tell a more distinctive story about Tasmania."
+     ]
+    },
+    {
+     "start": "10:35",
+     "end": "10:45",
+     "mins": 10,
+     "duration": "10m",
+     "title": "National Awards for Excellence: Finalist Showcase",
+     "subtitle": "",
+     "type": "Plenary Session",
+     "typeKey": "plenary",
+     "room": null,
+     "speakers": [],
+     "body": []
+    },
+    {
+     "start": "10:45",
+     "end": "11:15",
+     "mins": 30,
+     "duration": "30m",
+     "title": "Morning Tea",
+     "subtitle": "",
+     "type": "Networking / Refreshments",
+     "typeKey": "break",
+     "room": null,
+     "speakers": [],
+     "body": []
+    },
+    {
+     "start": "11:15",
+     "end": "11:30",
+     "mins": 15,
+     "duration": "15m",
+     "title": "National Awards for Excellence: Finalist Showcase",
+     "subtitle": "",
+     "type": "Plenary Session",
+     "typeKey": "plenary",
+     "room": null,
+     "speakers": [],
+     "body": []
+    },
+    {
+     "start": "11:30",
+     "end": "12:00",
+     "mins": 30,
+     "duration": "30m",
+     "title": "Diversification Compass: Mapping Economic Transition Across Australia",
+     "subtitle": "Presented by Dr Jen Rayner, Director - Energy Transition, Deloitte",
+     "type": "Plenary Session",
+     "typeKey": "plenary",
+     "room": null,
+     "speakers": [
+      {
+       "name": "Dr Jen Rayner",
+       "photo": "/assets/images/speakers/dr-jen-rayner.jpg"
+      }
+     ],
+     "body": [
+      "Australia's regions are experiencing structural change at very different speeds and in very different ways. Dr Jen Rayner will introduce Deloitte Access Economics' Diversification Compass, a new framework for understanding how economic transition is unfolding across Australia's regions.",
+      "Drawing on original research and place-based analysis, you'll explore five distinct transition archetypes, see where structural shifts are emerging, and learn how to spot risks before decline becomes entrenched. The session will also highlight where diversification opportunities are opening up and how these insights can inform stronger, more resilient local economic development strategies."
+     ]
+    },
+    {
+     "start": "12:00",
+     "end": "12:30",
+     "mins": 30,
+     "duration": "30m",
+     "title": "In from the Margins: How Australian Local Government Leaders are Reshaping Economic Development",
+     "subtitle": "Presented by Andrew Wear, Principal, Econovation",
+     "type": "Plenary Session",
+     "typeKey": "plenary",
+     "room": null,
+     "speakers": [
+      {
+       "name": "Andrew Wear",
+       "photo": "/assets/images/speakers/andrew-wear.jpg"
+      },
+      {
+       "name": "Sam Johnson",
+       "photo": "/assets/images/speakers/sam-johnson.jpg"
+      }
+     ],
+     "body": [
+      "Andrew Wear will present findings from a new report developed with Economic Development Australia and Econovation, drawing on perspectives from local government CEOs and General Managers across metropolitan, regional, rural and remote Australia.",
+      "You'll hear what senior council leaders see as the real priorities for economic development, from housing, infrastructure and workforce capability to investment, productivity and industry competitiveness, and where they see the biggest opportunities for economic development teams to add value.",
+      "Andrew will then facilitate a panel discussion with local government CEOs, exploring how councils can strengthen economic leadership, improve whole-of-organisation alignment and ensure economic development is part of the strategic conversation."
+     ]
+    },
+    {
+     "start": "12:30",
+     "end": "12:40",
+     "mins": 10,
+     "duration": "10m",
+     "title": "National Awards for Excellence: Finalist Showcase",
+     "subtitle": "",
+     "type": "Plenary Session",
+     "typeKey": "plenary",
+     "room": null,
+     "speakers": [],
+     "body": []
+    },
+    {
+     "start": "12:40",
+     "end": "13:30",
+     "mins": 50,
+     "duration": "50m",
+     "title": "Lunch",
+     "subtitle": "",
+     "type": "Networking / Refreshments",
+     "typeKey": "break",
+     "room": null,
+     "speakers": [],
+     "body": []
+    },
+    {
+     "start": "14:45",
+     "end": "15:15",
+     "mins": 30,
+     "duration": "30m",
+     "title": "Afternoon Tea",
+     "subtitle": "",
+     "type": "Networking / Refreshments",
+     "typeKey": "break",
+     "room": null,
+     "speakers": [],
+     "body": []
+    },
+    {
+     "start": "15:15",
+     "end": "15:30",
+     "mins": 15,
+     "duration": "15m",
+     "title": "National Awards for Excellence: Finalist Showcase",
+     "subtitle": "",
+     "type": "Plenary Session",
+     "typeKey": "plenary",
+     "room": null,
+     "speakers": [],
+     "body": []
+    },
+    {
+     "start": "16:30",
+     "end": "16:35",
+     "mins": 5,
+     "duration": "5m",
+     "title": "Day One Wrap-Up",
+     "subtitle": "",
+     "type": "Plenary Session",
+     "typeKey": "plenary",
+     "room": null,
+     "speakers": [
+      {
+       "name": "Jeremy Crawford",
+       "photo": "/assets/images/speakers/jeremy-crawford.jpg"
+      }
+     ],
+     "body": [
+      "Take a moment to reflect on the ideas, insights and conversations from Day One as our MC brings the conference sessions to a close.",
+      "Then it's time to head back, get ready and join colleagues for the National Economic Development Awards for Excellence Gala Dinner, celebrating outstanding work from across the sector!"
+     ]
+    },
+    {
+     "start": "18:00",
+     "end": "23:00",
+     "mins": 300,
+     "duration": "5h",
+     "title": "National Economic Development Awards for Excellence Gala Dinner",
+     "subtitle": "In The Hanging Garden",
+     "type": "Social Function",
+     "typeKey": "social",
+     "room": null,
+     "speakers": [],
+     "body": [
+      "Join us for an exceptional evening of celebration at the National Economic Development Awards for Excellence Gala Dinner.",
+      "The National Economic Development Awards for Excellence recognises excellence within the sector, celebrating those organisations and individuals who are driving sustainable growth and community prosperity across Australia.",
+      "The Gala Dinner will be held at In The Hanging Garden, one of Hobart's most distinctive and dynamic venues. Nestled beneath a lush canopy of greenery, this unique space blends heritage architecture with a vibrant hospitality experience, offering delegates an unforgettable evening of connection, great food and a lively atmosphere in the heart of the city.",
+      "From the presentation of the National Economic Development Awards for Excellence to the opportunity to connect with peers and celebrate the sector's impact, this is an evening not to be missed!"
+     ]
+    }
+   ],
+   "start": "07:45",
+   "end": "23:00"
+  },
+  {
+   "n": 3,
+   "id": "day-3",
+   "weekday": "Thursday",
+   "date": "15 October",
+   "iso": "2026-10-15",
+   "short": "Thu 15",
+   "sessions": [
+    {
+     "start": "08:00",
+     "end": "08:30",
+     "mins": 30,
+     "duration": "30m",
+     "title": "Coffee & Registrations",
+     "subtitle": "",
+     "type": "Networking / Refreshments",
+     "typeKey": "break",
+     "room": null,
+     "speakers": [],
+     "body": [
+      "Arrive early, collect your name badge, grab a coffee and connect with fellow delegates before the third day of the NEDC26 program begins."
+     ]
+    },
+    {
+     "start": "08:30",
+     "end": "08:40",
+     "mins": 10,
+     "duration": "10m",
+     "title": "Day Three Welcome",
+     "subtitle": "",
+     "type": "Plenary Session",
+     "typeKey": "plenary",
+     "room": null,
+     "speakers": [
+      {
+       "name": "Jeremy Crawford",
+       "photo": "/assets/images/speakers/jeremy-crawford.jpg"
+      }
+     ],
+     "body": [
+      "Join our MC for a warm welcome to Day Three, with a quick look ahead at the final day's sessions, conversations and opportunities to connect."
+     ]
+    },
+    {
+     "start": "09:55",
+     "end": "10:20",
+     "mins": 25,
+     "duration": "25m",
+     "title": "Innovation Driving Investment — SA Innovation Places Framework",
+     "subtitle": "Presented by Diane Dixon, State Innovation Places Lead, Department of the Premier and Cabinet, Government of South Australia",
+     "type": "Plenary Session",
+     "typeKey": "plenary",
+     "room": null,
+     "speakers": [
+      {
+       "name": "Diane Dixon",
+       "photo": "/assets/images/speakers/diane-dixon.jpg"
+      }
+     ],
+     "body": [
+      "Diane Dixon will showcase the SA Innovation Places Framework and how South Australia is using a more coordinated approach to strengthen innovation precincts, attract investment and support economic growth.",
+      "You'll hear how the framework connects place, industry, research and government to build stronger innovation ecosystems, and what other regions can learn from South Australia's approach to turning innovation assets into investment-ready opportunities."
+     ]
+    },
+    {
+     "start": "10:20",
+     "end": "10:50",
+     "mins": 30,
+     "duration": "30m",
+     "title": "Morning Tea",
+     "subtitle": "",
+     "type": "Networking / Refreshments",
+     "typeKey": "break",
+     "room": null,
+     "speakers": [],
+     "body": []
+    },
+    {
+     "start": "10:50",
+     "end": "11:35",
+     "mins": 45,
+     "duration": "45m",
+     "title": "Indigenous Community Economic Development in Tasmania",
+     "subtitle": "Presented by Sorita McGrane, Director, Economic Development Australia",
+     "type": "Plenary Session",
+     "typeKey": "plenary",
+     "room": null,
+     "speakers": [
+      {
+       "name": "Sorita McGrane ACEcD",
+       "photo": "/assets/images/speakers/sorita-mcgrane-acecd.jpg"
+      }
+     ],
+     "body": [
+      "Sorita McGrane will explore Indigenous community economic development in Tasmania, sharing how locally led approaches can create opportunity, strengthen enterprise and support more inclusive economic participation.",
+      "Joined by other voices from across the sector, Sorita will highlight the role of partnership, community leadership and place-based action in building stronger, more inclusive local economies and creating long-term outcomes for Indigenous communities."
+     ]
+    },
+    {
+     "start": "12:40",
+     "end": "13:40",
+     "mins": 60,
+     "duration": "1h",
+     "title": "Lunch",
+     "subtitle": "",
+     "type": "Networking / Refreshments",
+     "typeKey": "break",
+     "room": null,
+     "speakers": [],
+     "body": []
+    },
+    {
+     "start": "14:45",
+     "end": "15:15",
+     "mins": 30,
+     "duration": "30m",
+     "title": "Afternoon Tea",
+     "subtitle": "",
+     "type": "Networking / Refreshments",
+     "typeKey": "break",
+     "room": null,
+     "speakers": [],
+     "body": []
+    },
+    {
+     "start": "15:15",
+     "end": "16:00",
+     "mins": 45,
+     "duration": "45m",
+     "title": "The Great Debate: If Amazon called tomorrow, would you say yes?",
+     "subtitle": "Two sides. One big investment decision. What side are you on?",
+     "type": "Plenary Session",
+     "typeKey": "plenary",
+     "room": null,
+     "speakers": [
+      {
+       "name": "Shaun Miller",
+       "photo": "/assets/images/speakers/shaun-miller.jpg"
+      },
+      {
+       "name": "Sorita McGrane ACEcD",
+       "photo": "/assets/images/speakers/sorita-mcgrane-acecd.jpg"
+      }
+     ],
+     "body": [
+      "Grab a drink, settle in and get ready for what has fast become a highlight of NEDC!",
+      "Two teams will go head-to-head on a big investment attraction question: if Amazon called tomorrow, would you say yes?",
+      "The debate will test the case for and against actively recruiting and incentivising a major multinational to establish facilities, headquarters, data centres, logistics hubs or other significant investments in a city, region or country. Expect strong arguments, competing priorities and plenty of food for thought on the opportunities, risks and trade-offs that come with major investment decisions."
+     ]
+    },
+    {
+     "start": "16:45",
+     "end": "17:00",
+     "mins": 15,
+     "duration": "15m",
+     "title": "Conference Closing Remarks",
+     "subtitle": "",
+     "type": "Plenary Session",
+     "typeKey": "plenary",
+     "room": null,
+     "speakers": [
+      {
+       "name": "Jeremy Crawford",
+       "photo": "/assets/images/speakers/jeremy-crawford.jpg"
+      },
+      {
+       "name": "Greg Bowden",
+       "photo": "/assets/images/speakers/greg-bowden.jpg"
+      }
+     ],
+     "body": [
+      "Join Economic Development Australia (EDA) Chair Greg Bowden and MC Jeremy Crawford for the official close of NEDC26, reflecting on the key ideas, insights and conversations from across the conference.",
+      "The session will bring together the major themes from the program, acknowledge the contributions of speakers, partners and delegates, and look ahead to how the connections and learnings from Hobart can continue beyond the conference."
+     ]
+    }
+   ],
+   "start": "08:00",
+   "end": "17:00"
+  },
+  {
+   "n": 4,
+   "id": "day-4",
+   "weekday": "Friday",
+   "date": "16 October",
+   "iso": "2026-10-16",
+   "short": "Fri 16",
+   "sessions": [
+    {
+     "start": "09:00",
+     "end": "16:00",
+     "mins": 420,
+     "duration": "7h",
+     "title": "Special Post-Conference Study Tour: Creative and Cultural Economy",
+     "subtitle": "Extend your NEDC experience with a special post-conference study tour on Friday, designed for those wanting to dive deeper into what makes Greater Hobart unique.",
+     "type": "Study Tour",
+     "typeKey": "tour",
+     "room": null,
+     "speakers": [],
+     "body": [
+      "Extend your NEDC experience with a special post-conference study tour on Friday, designed for those wanting to dive deeper into what makes Greater Hobart unique.",
+      "Discover how arts and culture are central to the region's identity, liveability and economic success. From globally renowned attractions, including a visit to the iconic Museum of Old and New Art (MONA), to grassroots community spaces, this tour offers an inspiring look at the vibrant cultural ecosystem shaping Greater Hobart, and a chance to connect, reflect and explore beyond the conference program.",
+      "Stay a little longer and make the most of your time in Hobart. This is where ideas continue, connections deepen and the real insights come to life!",
+      "Highlights of the tour include:",
+      "Ferry trip to the iconic Museum of Old and New Art (MONA), including a guided tour and insights into its global impact",
+      "A visit to Moonah Arts Centre, showcasing community arts, local engagement and cultural development",
+      "Behind-the-scenes tours of the historic Theatre Royal and Studio Theatre",
+      "Exploration of the Tasmanian Museum and Art Gallery (TMAG), focusing on heritage, exhibitions and cultural tourism"
+     ]
+    }
+   ],
+   "start": "09:00",
+   "end": "16:00"
+  }
+ ],
+ "types": [
+  {
+   "name": "Plenary Session",
+   "key": "plenary"
+  },
+  {
+   "name": "Study Tour",
+   "key": "tour"
+  },
+  {
+   "name": "Social Function",
+   "key": "social"
+  },
+  {
+   "name": "Networking / Refreshments",
+   "key": "break"
+  }
+ ],
+ "note": "Sessions, timings and content are subject to change."
+}

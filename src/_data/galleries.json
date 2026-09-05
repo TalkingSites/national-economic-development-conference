@@ -1,0 +1,155 @@
+{
+ "home": {
+  "heading": "NEDC25 highlights",
+  "images": [
+   {
+    "src": "/assets/images/gal-home/gal-home-1.jpg",
+    "alt": "Delegates, sessions and social functions at NEDC25 (1 of 8)"
+   },
+   {
+    "src": "/assets/images/gal-home/gal-home-2.jpg",
+    "alt": "Delegates, sessions and social functions at NEDC25 (2 of 8)"
+   },
+   {
+    "src": "/assets/images/gal-home/gal-home-3.jpg",
+    "alt": "Delegates, sessions and social functions at NEDC25 (3 of 8)"
+   },
+   {
+    "src": "/assets/images/gal-home/gal-home-4.jpg",
+    "alt": "Delegates, sessions and social functions at NEDC25 (4 of 8)"
+   },
+   {
+    "src": "/assets/images/gal-home/gal-home-5.jpg",
+    "alt": "Delegates, sessions and social functions at NEDC25 (5 of 8)"
+   },
+   {
+    "src": "/assets/images/gal-home/gal-home-6.jpg",
+    "alt": "Delegates, sessions and social functions at NEDC25 (6 of 8)"
+   },
+   {
+    "src": "/assets/images/gal-home/gal-home-7.jpg",
+    "alt": "Delegates, sessions and social functions at NEDC25 (7 of 8)"
+   },
+   {
+    "src": "/assets/images/gal-home/gal-home-8.jpg",
+    "alt": "Delegates, sessions and social functions at NEDC25 (8 of 8)"
+   }
+  ]
+ },
+ "welcome": {
+  "heading": "The Welcome Reception",
+  "images": [
+   {
+    "src": "/assets/images/gal-welcome/gal-welcome-1.jpg",
+    "alt": "Guests at the NEDC Welcome Reception (1 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-welcome/gal-welcome-2.jpg",
+    "alt": "Guests at the NEDC Welcome Reception (2 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-welcome/gal-welcome-3.jpg",
+    "alt": "Guests at the NEDC Welcome Reception (3 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-welcome/gal-welcome-4.jpg",
+    "alt": "Guests at the NEDC Welcome Reception (4 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-welcome/gal-welcome-5.jpg",
+    "alt": "Guests at the NEDC Welcome Reception (5 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-welcome/gal-welcome-6.jpg",
+    "alt": "Guests at the NEDC Welcome Reception (6 of 6)"
+   }
+  ]
+ },
+ "awards": {
+  "heading": "The Gala Dinner",
+  "images": [
+   {
+    "src": "/assets/images/gal-awards/gal-awards-1.jpg",
+    "alt": "The National Economic Development Awards for Excellence Gala Dinner (1 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-awards/gal-awards-2.jpg",
+    "alt": "The National Economic Development Awards for Excellence Gala Dinner (2 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-awards/gal-awards-3.jpg",
+    "alt": "The National Economic Development Awards for Excellence Gala Dinner (3 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-awards/gal-awards-4.jpg",
+    "alt": "The National Economic Development Awards for Excellence Gala Dinner (4 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-awards/gal-awards-5.jpg",
+    "alt": "The National Economic Development Awards for Excellence Gala Dinner (5 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-awards/gal-awards-6.jpg",
+    "alt": "The National Economic Development Awards for Excellence Gala Dinner (6 of 6)"
+   }
+  ]
+ },
+ "hobart": {
+  "heading": "Around Hobart",
+  "images": [
+   {
+    "src": "/assets/images/gal-hobart/gal-hobart-1.jpg",
+    "alt": "Hobart and surrounds (1 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-hobart/gal-hobart-2.jpg",
+    "alt": "Hobart and surrounds (2 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-hobart/gal-hobart-3.jpg",
+    "alt": "Hobart and surrounds (3 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-hobart/gal-hobart-4.jpg",
+    "alt": "Hobart and surrounds (4 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-hobart/gal-hobart-5.jpg",
+    "alt": "Hobart and surrounds (5 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-hobart/gal-hobart-6.jpg",
+    "alt": "Hobart and surrounds (6 of 6)"
+   }
+  ]
+ },
+ "eda": {
+  "heading": "Economic Development Australia",
+  "images": [
+   {
+    "src": "/assets/images/gal-eda/gal-eda-1.jpg",
+    "alt": "Economic Development Australia members and events (1 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-eda/gal-eda-2.jpg",
+    "alt": "Economic Development Australia members and events (2 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-eda/gal-eda-3.jpg",
+    "alt": "Economic Development Australia members and events (3 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-eda/gal-eda-4.jpg",
+    "alt": "Economic Development Australia members and events (4 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-eda/gal-eda-5.jpg",
+    "alt": "Economic Development Australia members and events (5 of 6)"
+   },
+   {
+    "src": "/assets/images/gal-eda/gal-eda-6.jpg",
+    "alt": "Economic Development Australia members and events (6 of 6)"
+   }
+  ]
+ }
+}

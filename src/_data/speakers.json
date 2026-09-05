@@ -1,0 +1,304 @@
+{
+ "groups": [
+  {
+   "title": "Master of Ceremonies",
+   "people": [
+    {
+     "name": "Jeremy Crawford",
+     "role": "CEO, Geelong Chamber of Commerce",
+     "photo": "/assets/images/speakers/jeremy-crawford.jpg"
+    }
+   ]
+  },
+  {
+   "title": "Keynote Speakers",
+   "people": [
+    {
+     "name": "Christina Wiremu-Brook",
+     "role": "Founder, Kuria",
+     "photo": "/assets/images/speakers/christina-wiremu-brook.jpg"
+    },
+    {
+     "name": "Professor Arnold Dix",
+     "role": "",
+     "photo": "/assets/images/speakers/professor-arnold-dix.jpg"
+    },
+    {
+     "name": "Zita Cobb",
+     "role": "Founder & CEO, Shorefast (Presenting virtually)",
+     "photo": "/assets/images/speakers/zita-cobb.jpg"
+    }
+   ]
+  },
+  {
+   "title": "Speakers",
+   "people": [
+    {
+     "name": "Amanda Hinton ACEcD",
+     "role": "Senior Advisor Economic Development, Rockhampton Regional Council",
+     "photo": "/assets/images/speakers/amanda-hinton-acecd.jpg"
+    },
+    {
+     "name": "Andrew Wear",
+     "role": "Principal, Econovation",
+     "photo": "/assets/images/speakers/andrew-wear.jpg"
+    },
+    {
+     "name": "Annie Lawrence",
+     "role": "Head of Investment and International Relations, Economic Development Department, City of Moreton Bay",
+     "photo": "/assets/images/speakers/annie-lawrence.jpg"
+    },
+    {
+     "name": "Bob Elkington",
+     "role": "Coordinator Economic Development, Macedon Ranges Shire Council",
+     "photo": "/assets/images/speakers/bob-elkington.jpg"
+    },
+    {
+     "name": "Bruce Marshall ACEcD",
+     "role": "Manager Economic Development, Mitchell Shire Council",
+     "photo": "/assets/images/speakers/bruce-marshall-acecd.jpg"
+    },
+    {
+     "name": "Cathy Treasure",
+     "role": "Co-Founder & Director, Australian Centre for Regional Events",
+     "photo": "/assets/images/speakers/cathy-treasure.jpg"
+    },
+    {
+     "name": "Christopher Manoski",
+     "role": "Manager Place and Economy, Cumberland City Council",
+     "photo": "/assets/images/speakers/christopher-manoski.jpg"
+    },
+    {
+     "name": "Danielle Phyland",
+     "role": "Associate Tourism, Urban Enterprise",
+     "photo": "/assets/images/speakers/danielle-phyland.jpg"
+    },
+    {
+     "name": "Darren Harrison",
+     "role": "Manager Economic Strategy & Services, Redland City Council",
+     "photo": "/assets/images/speakers/darren-harrison.jpg"
+    },
+    {
+     "name": "David MacLennan",
+     "role": "CEO, City of Vincent",
+     "photo": "/assets/images/speakers/david-maclennan.jpg"
+    },
+    {
+     "name": "Diane Dixon",
+     "role": "State Innovation Places Lead, Department of the Premier and Cabinet, Government of South Australia",
+     "photo": "/assets/images/speakers/diane-dixon.jpg"
+    },
+    {
+     "name": "Don Winsor ACEcD",
+     "role": "Manager Advocacy, Communication & Engagement, Tablelands Regional Council",
+     "photo": "/assets/images/speakers/don-winsor-acecd.jpg"
+    },
+    {
+     "name": "Dr Anna Edwards",
+     "role": "Director, Ingenium Research",
+     "photo": "/assets/images/speakers/dr-anna-edwards.jpg"
+    },
+    {
+     "name": "Dr Dimity Podger",
+     "role": "Director, Regen Labs",
+     "photo": "/assets/images/speakers/dr-dimity-podger.jpg"
+    },
+    {
+     "name": "Dr Jen Rayner",
+     "role": "Director - Energy Transition, Deloitte",
+     "photo": "/assets/images/speakers/dr-jen-rayner.jpg"
+    },
+    {
+     "name": "Dr John Ryks",
+     "role": "Community Owned Australia Lead, ACRE",
+     "photo": "/assets/images/speakers/dr-john-ryks.jpg"
+    },
+    {
+     "name": "Dr Lisa McDonald",
+     "role": "CEO, Regional Development Australia Townsville and North West Queensland",
+     "photo": "/assets/images/speakers/dr-lisa-mcdonald.jpg"
+    },
+    {
+     "name": "Elissa Keenan",
+     "role": "CEO, Ecotourism Australia",
+     "photo": "/assets/images/speakers/elissa-keenan.jpg"
+    },
+    {
+     "name": "Estella Rodighiero",
+     "role": "CEO, Regional Development Australia Gold Coast",
+     "photo": "/assets/images/speakers/estella-rodighiero.jpg"
+    },
+    {
+     "name": "Gail Cottrill",
+     "role": "Chair, Regional Development Australia Central Coast",
+     "photo": "/assets/images/speakers/gail-cottrill.jpg"
+    },
+    {
+     "name": "Giovanna Lever ACEcD",
+     "role": "Managing Director, Sparrowly Group",
+     "photo": "/assets/images/speakers/giovanna-lever-acecd.jpg"
+    },
+    {
+     "name": "Greg Bowden",
+     "role": "Chair, Economic Development Australia",
+     "photo": "/assets/images/speakers/greg-bowden.jpg"
+    },
+    {
+     "name": "Hamish Ritchie ACEcD",
+     "role": "Economic Development Specialist, Parkes Shire Council",
+     "photo": "/assets/images/speakers/hamish-ritchie-acecd.jpg"
+    },
+    {
+     "name": "Jaclyn Thorne",
+     "role": "Managing Director, The Tourism Collective",
+     "photo": "/assets/images/speakers/jaclyn-thorne.jpg"
+    },
+    {
+     "name": "Jacqueline Brinkman GAICD",
+     "role": "CEO, Economic Development Australia",
+     "photo": "/assets/images/speakers/jacqueline-brinkman-gaicd.jpg"
+    },
+    {
+     "name": "Jess Radford",
+     "role": "Acting CEO, Brand Tasmania",
+     "photo": "/assets/images/speakers/jess-radford.jpg"
+    },
+    {
+     "name": "Jonathan Rochwerger",
+     "role": "Director, Urban Enterprise",
+     "photo": "/assets/images/speakers/jonathan-rochwerger.jpg"
+    },
+    {
+     "name": "Karishma Kodavali ACEcD",
+     "role": "Principal Economic Advisor, City of Adelaide Council",
+     "photo": "/assets/images/speakers/karishma-kodavali-acecd.jpg"
+    },
+    {
+     "name": "Kate Haycock",
+     "role": "Market Leader – Regional Development & Northern Australia, AEC Group",
+     "photo": "/assets/images/speakers/kate-haycock.jpg"
+    },
+    {
+     "name": "Kath McCann",
+     "role": "General Manager, Marketing, Public Affairs and Social Impact, Tasmania Devils",
+     "photo": "/assets/images/speakers/kath-mccann.jpg"
+    },
+    {
+     "name": "Kerrianne Haggie ACEcD",
+     "role": "Head of Economic Intelligence, City of Moreton Bay",
+     "photo": "/assets/images/speakers/kerrianne-haggie-acecd.jpg"
+    },
+    {
+     "name": "Lewis Belling ACEcD",
+     "role": "Economic Development & Tourism Coordinator, City of Coffs Harbour",
+     "photo": "/assets/images/speakers/lewis-belling-acecd.jpg"
+    },
+    {
+     "name": "Linda Tillman",
+     "role": "Co-Founder & Director, Australian Centre for Regional Events",
+     "photo": "/assets/images/speakers/linda-tillman.jpg"
+    },
+    {
+     "name": "Lucy Proctor",
+     "role": "Coordinator Business Investment and Support, Yarra Ranges Council",
+     "photo": "/assets/images/speakers/lucy-proctor.jpg"
+    },
+    {
+     "name": "Mark Grimson",
+     "role": "Economic Development Manager, Wollongong City Council",
+     "photo": "/assets/images/speakers/mark-grimson.jpg"
+    },
+    {
+     "name": "Matt Pfahlert",
+     "role": "CEO, ACRE",
+     "photo": "/assets/images/speakers/matt-pfahlert.jpg"
+    },
+    {
+     "name": "Meg Allan",
+     "role": "Advocacy and Market Development Lead, ACRE",
+     "photo": "/assets/images/speakers/meg-allan.jpg"
+    },
+    {
+     "name": "Michael Campbell ACEcD",
+     "role": "Founding Director, Lucid Economics",
+     "photo": "/assets/images/speakers/michael-campbell-acecd.jpg"
+    },
+    {
+     "name": "Michael Kerr",
+     "role": "Founder, Kerr Capital",
+     "photo": "/assets/images/speakers/michael-kerr.jpg"
+    },
+    {
+     "name": "Mikaela Carroll ACEcD",
+     "role": "Regional Development Coordinator, Regional Development Australia Tasmania",
+     "photo": "/assets/images/speakers/mikaela-carroll-acecd.jpg"
+    },
+    {
+     "name": "Patrick McVeigh",
+     "role": "Global Fellow, The Business of Cities",
+     "photo": "/assets/images/speakers/patrick-mcveigh.jpg"
+    },
+    {
+     "name": "Sam Johnson",
+     "role": "CEO, City of Launceston",
+     "photo": "/assets/images/speakers/sam-johnson.jpg"
+    },
+    {
+     "name": "Shaelee Richards",
+     "role": "Director Community and Economy, Muswellbrook Shire Council",
+     "photo": "/assets/images/speakers/shaelee-richards.jpg"
+    },
+    {
+     "name": "Shannan Little ACEcD",
+     "role": "Manager Economic Development & Investment, Bass Coast Shire Council",
+     "photo": "/assets/images/speakers/shannan-little-acecd.jpg"
+    },
+    {
+     "name": "Shaun Miller",
+     "role": "Director, Economic Development Australia",
+     "photo": "/assets/images/speakers/shaun-miller.jpg"
+    },
+    {
+     "name": "Simon Massey ACEcD",
+     "role": "Data and Economic Development Lead, Shorefast, Director, Economic Development Australia",
+     "photo": "/assets/images/speakers/simon-massey-acecd.jpg"
+    },
+    {
+     "name": "Sorita McGrane ACEcD",
+     "role": "Director, Economic Development Australia",
+     "photo": "/assets/images/speakers/sorita-mcgrane-acecd.jpg"
+    },
+    {
+     "name": "Stephen Shotton ACEcD",
+     "role": "CEO, Regional Development Australia Adelaide Hills, Fleurieu and Kangaroo Island",
+     "photo": "/assets/images/speakers/stephen-shotton-acecd.jpg"
+    },
+    {
+     "name": "Stu Spiers",
+     "role": "Director - Australia, INSTID",
+     "photo": "/assets/images/speakers/stu-spiers.jpg"
+    },
+    {
+     "name": "Teona Cousin",
+     "role": "Executive Manager Economic Development and Tourism, Mackay Regional Council",
+     "photo": "/assets/images/speakers/teona-cousin.jpg"
+    },
+    {
+     "name": "The Hon Jeremy Rockliff MP",
+     "role": "Premier of Tasmania",
+     "photo": "/assets/images/speakers/the-hon-jeremy-rockliff-mp.jpg"
+    },
+    {
+     "name": "Tim Lihou ACEcD",
+     "role": "City Economy Program Manager, Penrith City Council",
+     "photo": "/assets/images/speakers/tim-lihou-acecd.jpg"
+    },
+    {
+     "name": "Tiz Porreca",
+     "role": "Director, AMONGST",
+     "photo": "/assets/images/speakers/tiz-porreca.jpg"
+    }
+   ]
+  }
+ ]
+}

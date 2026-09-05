@@ -1,0 +1,37 @@
+---
+layout: page.njk
+title: "Travel | NEDC26"
+heading: "Getting to Hobart, and getting around"
+lede: "Hobart Airport is 17 kilometres from the CBD, around a 15 minute drive."
+permalink: "/travel/"
+---
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <dl class="spec">
+        <div class="spec__row"><dt class="util spec__k">Distance</dt><dd class="spec__v num">17 km to the CBD</dd></div>
+        <div class="spec__row"><dt class="util spec__k">Drive time</dt><dd class="spec__v num">About 15 minutes</dd></div>
+      </dl>
+    </div>
+    <div class="stack">
+      <h2 class="h-s">Hobart Airport</h2>
+      <div class="prose">
+        <p>A range of transport options runs between the airport and the city, including SkyBus airport transfers, taxis, rideshare services and car hire.</p>
+        <p>As Tasmania's gateway, Hobart Airport offers direct services to major Australian cities including Melbourne, Sydney, Brisbane, Gold Coast, Perth, Canberra and Adelaide.</p>
+      </div>
+      <p>{% set btnText = "Airport information" %}{% set btnHref = "https://hobartairport.com.au/" %}{% set btnStyle = "outline" %}{% include "partials/btn.njk" %}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sunk">
+  <div class="wrap split">
+    <div><h2 class="h-s">Getting around</h2></div>
+    <div class="stack">
+      <div class="prose">
+        <p>Hobart is easy to navigate, with bus, ferry, taxi, rideshare, car hire, cycling and walking all available. The city's compact layout makes exploring on foot simple, while public and private transport make it easy to travel between the CBD, waterfront and nearby attractions.</p>
+      </div>
+      <p>{% set btnText = "Transport information" %}{% set btnHref = "https://www.transport.tas.gov.au/" %}{% set btnStyle = "outline" %}{% include "partials/btn.njk" %}</p>
+    </div>
+  </div>
+</section>

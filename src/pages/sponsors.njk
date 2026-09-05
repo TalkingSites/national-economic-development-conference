@@ -1,0 +1,32 @@
+---
+layout: page.njk
+title: "Sponsors | NEDC26"
+heading: "Thank you to our sponsors"
+lede: "NEDC26 is supported by a group of sponsors and partners whose commitment helps make this conference possible."
+permalink: "/sponsors/"
+ctaHeading: "Interested in sponsoring NEDC26?"
+ctaText: "Packages are available across a range of budgets and marketing objectives."
+---
+<section class="section">
+  <div class="wrap prose">
+    <p>Their support plays an important role in bringing together Australia's economic development community to share ideas, explore opportunities and drive conversations about innovation, transition and investment attraction. We encourage delegates to connect with them throughout the conference to learn more about the products, services and expertise they bring to the sector.</p>
+  </div>
+</section>
+
+<section class="section section--sunk">
+  <div class="wrap">
+    {% for tier in sponsorTiers %}
+      {% set inTier = sponsors | where("tier", tier) %}
+      {% if inTier | length %}
+      <div class="tier">
+        <div>
+          <h2 class="tier__name">{{ tier }}{% if inTier | length > 1 %}s{% endif %}</h2>
+          <hr class="rule" style="width:56px;margin-top:var(--s3)">
+        </div>
+        {% set logos = inTier %}
+        {% include "partials/logo-wall.njk" %}
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

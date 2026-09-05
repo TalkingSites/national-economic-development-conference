@@ -1,0 +1,9 @@
+{# items: [{ q, a }] #}
+<div class="faq">
+  {% for item in items %}
+  <details class="faq__item">
+    <summary class="faq__q">{{ item.q }}<span class="faq__sign" aria-hidden="true"></span></summary>
+    <div class="faq__a"><p>{{ item.a }}</p></div>
+  </details>
+  {% endfor %}
+</div>

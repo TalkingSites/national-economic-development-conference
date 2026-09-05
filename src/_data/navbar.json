@@ -3,39 +3,102 @@
     "title": "Program",
     "footer": true,
     "children": [
-      { "title": "Program overview", "href": "/#program" },
-      { "title": "Full program", "href": "/#program" },
-      { "title": "Speakers", "href": "/#program" },
-      { "title": "Study tours", "href": "/#program" },
-      { "title": "Welcome Reception", "href": "/#program" },
-      { "title": "Awards Gala Dinner", "href": "/#program" }
+      {
+        "title": "Program overview",
+        "href": "/program/"
+      },
+      {
+        "title": "Full program",
+        "href": "/full-program/"
+      },
+      {
+        "title": "Speakers",
+        "href": "/speakers/"
+      },
+      {
+        "title": "Study tours",
+        "href": "/study-tours/"
+      },
+      {
+        "title": "Welcome Reception",
+        "href": "/welcome-reception/"
+      },
+      {
+        "title": "Awards Gala Dinner",
+        "href": "/awards-gala/"
+      }
     ]
   },
   {
     "title": "Sponsorship",
     "footer": true,
     "children": [
-      { "title": "Sponsors", "href": "/#sponsors" },
-      { "title": "Sponsorship opportunities", "href": "/#sponsors" }
+      {
+        "title": "Sponsors",
+        "href": "/sponsors/"
+      },
+      {
+        "title": "Sponsorship opportunities",
+        "href": "/sponsorship/"
+      }
     ]
   },
   {
     "title": "Destination",
     "footer": true,
     "children": [
-      { "title": "Hobart", "href": "/#top" },
-      { "title": "Accommodation", "href": "/#top" },
-      { "title": "Travel", "href": "/#top" }
+      {
+        "title": "Hobart",
+        "href": "/hobart/"
+      },
+      {
+        "title": "Accommodation",
+        "href": "/accommodation/"
+      },
+      {
+        "title": "Travel",
+        "href": "/travel/"
+      }
     ]
   },
   {
     "title": "General",
     "footer": true,
     "children": [
-      { "title": "About EDA", "href": "/#top" },
-      { "title": "Programming Steering Committee", "href": "/#top" },
-      { "title": "FAQs", "href": "/#top" },
-      { "title": "Contact", "href": "mailto:events@edaustralia.com.au" }
+      {
+        "title": "About EDA",
+        "href": "/about-eda/"
+      },
+      {
+        "title": "Programming Steering Committee",
+        "href": "/committee/"
+      },
+      {
+        "title": "FAQs",
+        "href": "/faqs/"
+      },
+      {
+        "title": "Contact",
+        "href": "/contact/"
+      }
+    ]
+  },
+  {
+    "title": "Register",
+    "footer": false,
+    "children": [
+      {
+        "title": "Full registration",
+        "href": "https://au.entegy.events/attendeeregistration"
+      },
+      {
+        "title": "Social functions",
+        "href": "https://au.entegy.events/socials"
+      },
+      {
+        "title": "Sponsors and exhibitors",
+        "href": "https://au.entegy.events/exhibitorsponsor"
+      }
     ]
   }
 ]

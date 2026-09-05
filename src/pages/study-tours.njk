@@ -1,0 +1,35 @@
+---
+layout: page.njk
+title: "Study tours | NEDC26"
+heading: "See Place to Prosperity in action"
+lede: "Take your NEDC26 experience beyond the conference room and into the places, industries and ideas shaping Tasmania's future."
+permalink: "/study-tours/"
+ctaHeading: "Places on each tour are limited"
+ctaText: "Study tours are open to registered delegates and are booked during registration."
+---
+<section class="section">
+  <div class="wrap split">
+    <div class="stack-s">
+      <p class="util" style="color: var(--accent-quiet)">For registered delegates</p>
+    </div>
+    <div class="prose">
+      <p>{{ tours.intro }}</p>
+      <p>Whether you join us on Tuesday 13 October or extend your stay for the Friday post conference tour, each experience is designed to spark fresh thinking and deepen connections. {{ tours.note }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sunk">
+  <div class="wrap stack-l">
+    <div>
+      <div class="section-head">
+        <h2 class="h-l">The tours</h2>
+        <p class="util" style="color: var(--text-mute)">Four tours, Hobart</p>
+      </div>
+      <hr class="rule">
+    </div>
+    <div>
+      {% for tour in tours.items %}{% include "partials/tour.njk" %}{% endfor %}
+    </div>
+  </div>
+</section>

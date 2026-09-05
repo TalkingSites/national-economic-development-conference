@@ -1,0 +1,23 @@
+---
+layout: page.njk
+title: "Speakers | NEDC26"
+heading: "Speakers"
+lede: "Practitioners, researchers and leaders from across Australia and beyond, sharing what is working in economic development."
+permalink: "/speakers/"
+---
+{% for group in speakers.groups %}
+<section class="section{% if loop.index0 is odd %} section--sunk{% endif %}">
+  <div class="wrap stack-l">
+    <div>
+      <div class="section-head">
+        <h2 class="h-l">{{ group.title }}</h2>
+        <p class="util num" style="color: var(--text-mute)">{{ group.people | length }} {% if group.people | length == 1 %}speaker{% else %}speakers{% endif %}</p>
+      </div>
+      <hr class="rule">
+    </div>
+    {% set people = group.people %}
+    {% if group.people | length <= 4 %}{% set peopleClass = "people--feature" %}{% else %}{% set peopleClass = "" %}{% endif %}
+    {% include "partials/speaker-grid.njk" %}
+  </div>
+</section>
+{% endfor %}

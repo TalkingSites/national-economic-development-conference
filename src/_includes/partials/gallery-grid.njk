@@ -1,0 +1,13 @@
+{# images: [{ src, alt }] · galleryId: unique per page
+   Renders a grid of thumbnails that open in the lightbox. Without JavaScript
+   each thumbnail is a plain link to the full image, so nothing is lost. #}
+<ul class="shots" data-gallery="{{ galleryId | default('gallery') }}">
+  {% for img in images %}
+  <li class="shots__item">
+    <a class="shots__link" href="{{ img.src }}" data-index="{{ loop.index0 }}"
+       aria-label="Open image {{ loop.index }} of {{ images | length }}">
+      <img src="{{ img.src }}" alt="{{ img.alt }}" loading="lazy">
+    </a>
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,11 @@
+{# people: [{ name, role, photo }] #}
+<ul class="people{% if peopleClass %} {{ peopleClass }}{% endif %}">
+  {% for p in people %}
+  <li class="person">
+    {% if p.photo %}<img class="person__photo" src="{{ p.photo }}" alt="{{ p.name }}" loading="lazy" width="360" height="360">
+    {% else %}<span class="person__photo person__photo--none" aria-hidden="true"></span>{% endif %}
+    <p class="person__name">{{ p.name }}</p>
+    {% if p.role %}<p class="person__role">{{ p.role }}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>

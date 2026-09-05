@@ -1,12 +1,16 @@
-<section class="section">
+<section class="section" id="highlights">
   <div class="wrap stack-l">
-    {% set headHeading = gallery.heading %}
-    {% set headAside = '<p><a class="link util" href="' + event.highlightsVideoUrl + '">Watch the film</a></p>' %}
+    {% set headHeading = galleries.home.heading %}
+    {% set headAside = false %}
     {% include "partials/section-head.njk" %}
-    <div class="gallery">
-      {% for img in gallery.images %}
-      <figure><img src="{{ img.src }}" alt="{{ img.alt }}" loading="lazy"></figure>
-      {% endfor %}
-    </div>
+
+    {% set videoId = event.highlightsVideoId %}
+    {% set videoPoster = event.highlightsVideoPoster %}
+    {% set videoTitle = "NEDC25 in ninety seconds" %}
+    {% include "partials/video.njk" %}
+
+    {% set images = galleries.home.images %}
+    {% set galleryId = "home" %}
+    {% include "partials/gallery-grid.njk" %}
   </div>
 </section>

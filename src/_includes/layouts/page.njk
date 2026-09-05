@@ -1,0 +1,10 @@
+---
+layout: base.njk
+styles: ["/assets/css/page.css", "/assets/css/media.css"]
+scripts: ["/assets/js/media.js"]
+---
+<main id="top">
+  {% include "partials/page-header.njk" %}
+  {{ content | safe }}
+  {% if cta != false %}{% include "partials/cta-band.njk" %}{% endif %}
+</main>

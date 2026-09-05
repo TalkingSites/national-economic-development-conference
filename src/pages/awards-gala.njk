@@ -1,0 +1,41 @@
+---
+layout: page.njk
+title: "Awards for Excellence Gala Dinner | NEDC26"
+heading: "Celebrating excellence at NEDC26"
+lede: "The National Economic Development Awards for Excellence recognise the organisations and individuals driving sustainable growth and community prosperity across Australia."
+headMeta: "Wednesday 14 October 2026, 6pm to 11pm, In The Hanging Garden"
+permalink: "/awards-gala/"
+ctaHeading: "The Gala Dinner is at capacity"
+ctaText: "Tickets are no longer available for purchase. The events team can answer questions about the awards."
+---
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <dl class="spec">
+        <div class="spec__row"><dt class="util spec__k">Date</dt><dd class="spec__v num">Wednesday 14 October</dd></div>
+        <div class="spec__row"><dt class="util spec__k">Time</dt><dd class="spec__v num">6pm to 11pm</dd></div>
+        <div class="spec__row"><dt class="util spec__k">Venue</dt><dd class="spec__v">In The Hanging Garden</dd></div>
+        <div class="spec__row"><dt class="util spec__k">Tickets</dt><dd class="spec__v">At capacity</dd></div>
+      </dl>
+    </div>
+    <div class="stack">
+      <div class="prose">
+        <p>Join us for an evening of celebration at the National Economic Development Awards for Excellence Gala Dinner.</p>
+        <p>The Gala Dinner is held at In The Hanging Garden, one of Hobart's most distinctive venues. Nestled beneath a canopy of greenery, this space blends heritage architecture with a vibrant hospitality experience, offering an evening of connection, great food and a lively atmosphere in the heart of the city.</p>
+        <p>From the presentation of the awards to the opportunity to connect with peers and celebrate the sector's impact, this is an evening not to be missed.</p>
+      </div>
+      <p><span class="badge">Sold out</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sunk">
+  <div class="wrap stack-l">
+    {% set headHeading = galleries.awards.heading %}
+    {% set headAside = false %}
+    {% include "partials/section-head.njk" %}
+    {% set images = galleries.awards.images %}
+    {% set galleryId = "awards" %}
+    {% include "partials/gallery-grid.njk" %}
+  </div>
+</section>

@@ -1,0 +1,39 @@
+---
+layout: page.njk
+title: "About EDA | NEDC26"
+heading: "Economic Development Australia"
+lede: "The national peak body for economic development professionals, building capacity, promoting excellence and providing leadership on the issues that matter to members."
+permalink: "/about-eda/"
+ctaHeading: "Members register at a discounted rate"
+ctaText: "Membership is available for individuals and corporates."
+---
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <dl class="spec">
+        <div class="spec__row"><dt class="util spec__k">Established</dt><dd class="spec__v num">2007</dd></div>
+        <div class="spec__row"><dt class="util spec__k">Members</dt><dd class="spec__v num">Over 2,500</dd></div>
+        <div class="spec__row"><dt class="util spec__k">Reach</dt><dd class="spec__v">State Practitioner Networks across Australia</dd></div>
+      </dl>
+    </div>
+    <div class="stack">
+      <div class="prose">
+        <p>NEDC26 is the flagship event for Economic Development Australia. Established in 2007, EDA has over 2,500 members and State Practitioner Networks across the country.</p>
+        <p>EDA's activities are underpinned by four guiding principles: building and supporting a collegial professional sector, promoting a culture of economic development excellence, delivering influence and leadership for the sector, and operating at best practice governance standards.</p>
+        <p>Become a member of EDA to qualify for discounted member rates.</p>
+      </div>
+      <p>{% set btnText = "Visit the EDA website" %}{% set btnHref = event.edaUrl %}{% set btnStyle = "outline" %}{% include "partials/btn.njk" %}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sunk">
+  <div class="wrap stack-l">
+    {% set headHeading = galleries.eda.heading %}
+    {% set headAside = false %}
+    {% include "partials/section-head.njk" %}
+    {% set images = galleries.eda.images %}
+    {% set galleryId = "eda" %}
+    {% include "partials/gallery-grid.njk" %}
+  </div>
+</section>

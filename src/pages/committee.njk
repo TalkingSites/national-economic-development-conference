@@ -1,0 +1,33 @@
+---
+layout: page.njk
+title: "Programming Steering Committee | NEDC26"
+heading: "Guiding the NEDC26 program"
+lede: "The Programming Steering Committee was selected through a competitive expression of interest process."
+permalink: "/committee/"
+---
+<section class="section">
+  <div class="wrap prose">
+    <p>Representing a breadth of expertise from across the sector, the committee helps shape a dynamic and thought provoking program aligned to the 2026 theme, <em>Place to Prosperity: Innovation, Transition and Investment Attraction</em>. Together they guide discussions on how places can drive growth, navigate transition and attract investment to build resilient and prosperous communities.</p>
+  </div>
+</section>
+
+<section class="section section--sunk">
+  <div class="wrap stack-l">
+    <div>
+      <div class="section-head">
+        <h2 class="h-l">Committee members</h2>
+        <p class="util num" style="color: var(--text-mute)">{{ committee | length }} members</p>
+      </div>
+      <hr class="rule">
+    </div>
+    <div class="listing">
+      {% for m in committee %}
+      <div class="listing__row">
+        <p class="listing__name">{{ m.name }}</p>
+        <p class="listing__meta">{{ m.role }}</p>
+        <span></span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

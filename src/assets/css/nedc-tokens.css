@@ -21,8 +21,16 @@
   --ground:        #fbf9f6;  /* page */
   --surface:       #ffffff;  /* raised panels, logo tiles */
   --surface-sunk:  #f3eff3;  /* recessed strips */
-  --slab:          #14123a;  /* inverted sections */
-  --slab-2:        #1d1a4d;  /* inverted sections, second level */
+  --slab:          #1e1b57;  /* inverted sections that stay dark in both themes */
+
+  /* Hero and page header band. Unlike --slab this follows the theme, so light
+     mode gets a light band with dark type. */
+  --band:          #f3eff9;
+  --band-text:     #1b1938;
+  --band-soft:     #55506e;
+  --band-mute:     #7d7694;
+  --band-line:     rgba(20,18,58,.13);
+  --slab-2:        #2a2668;  /* inverted sections, second level */
 
   /* --- Lines ------------------------------------------------------------ */
   --line:          #e3dde4;
@@ -46,7 +54,7 @@
 
   /* --- Type ------------------------------------------------------------- */
   --font-display: "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-body:    "Newsreader", Georgia, "Times New Roman", serif;
+  --font-body:    "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-util:    "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   --step--2: 0.75rem;
@@ -87,8 +95,14 @@
     --ground:        #100e2b;
     --surface:       #191640;
     --surface-sunk:  #151235;
-    --slab:          #0b0a1f;
-    --slab-2:        #171441;
+    --slab:          #07061a;
+
+    --band:          #07061a;
+    --band-text:     #f5f2fa;
+    --band-soft:     #bdb6d8;
+    --band-mute:     #8e87ae;
+    --band-line:     rgba(255,255,255,.14);
+    --slab-2:        #110e33;
 
     --line:          rgba(255,255,255,.13);
     --line-strong:   rgba(255,255,255,.26);
@@ -117,8 +131,14 @@
   --ground:        #100e2b;
   --surface:       #191640;
   --surface-sunk:  #151235;
-  --slab:          #0b0a1f;
-  --slab-2:        #171441;
+  --slab:          #07061a;
+  --slab-2:        #110e33;
+
+  --band:          #07061a;
+  --band-text:     #f5f2fa;
+  --band-soft:     #bdb6d8;
+  --band-mute:     #8e87ae;
+  --band-line:     rgba(255,255,255,.14);
 
   --line:          rgba(255,255,255,.13);
   --line-strong:   rgba(255,255,255,.26);

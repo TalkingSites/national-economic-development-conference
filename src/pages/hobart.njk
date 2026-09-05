@@ -1,0 +1,33 @@
+---
+layout: page.njk
+title: "Hobart | NEDC26"
+heading: "A destination worth exploring"
+lede: "Hobart (Nipaluna) is a city where heritage, harbour and creativity come together."
+permalink: "/hobart/"
+ctaHeading: "Make the most of your time in Hobart"
+ctaText: "Register for NEDC26, then plan the days either side of the conference."
+---
+<section class="section">
+  <div class="wrap split">
+    <div class="stack-s">
+      <img src="/assets/images/day4-derwent.jpg" alt="The Derwent River at Berriedale, north of Hobart" style="width:100%;border-radius:var(--r-flat)" loading="lazy">
+      <p>{% set btnText = "Discover Tasmania" %}{% set btnHref = "https://www.discovertasmania.com.au/" %}{% set btnStyle = "outline" %}{% include "partials/btn.njk" %}</p>
+    </div>
+    <div class="prose">
+      <p>Framed by the River Derwent and kunanyi / Mount Wellington, and shaped by the enduring culture and custodianship of the Palawa people, Tasmania's capital blends striking natural beauty with world class culture, exceptional food and wine, and a rich sense of history.</p>
+      <p>From the sandstone charm of Salamanca to acclaimed galleries, waterfront dining and experiences just beyond the city, Hobart invites delegates to slow down, look closer and discover a destination full of character, contrast and possibility.</p>
+      <p>It also rewards those who stay a little longer, with day trips, scenic adventures and uniquely Tasmanian experiences all within easy reach, making it easy to extend your visit and explore beyond the conference.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sunk">
+  <div class="wrap stack-l">
+    {% set headHeading = galleries.hobart.heading %}
+    {% set headAside = false %}
+    {% include "partials/section-head.njk" %}
+    {% set images = galleries.hobart.images %}
+    {% set galleryId = "hobart" %}
+    {% include "partials/gallery-grid.njk" %}
+  </div>
+</section>

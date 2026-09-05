@@ -1,0 +1,65 @@
+{# Hour by hour schedule from _data/schedule.json.
+   Each day is its own panel with an inverted header, so days never blend into
+   one another. Within a day, every slot is a card carrying its own time,
+   title, description and speakers. Breaks stay as thin dividers because they
+   are not sessions anyone chooses between. #}
+<div class="sched">
+  <nav class="sched-days" id="schedDays" aria-label="Jump to day">
+    {% for day in schedule.days %}
+    <a class="sched-days__link" href="#{{ day.id }}">
+      <span class="sched-days__n util">Day {{ day.n }}</span>
+      <span class="sched-days__date">{{ day.short }}</span>
+    </a>
+    {% endfor %}
+  </nav>
+
+  {% for day in schedule.days %}
+  <section class="sday" id="{{ day.id }}">
+    <header class="sday__head">
+      <p class="sday__n util">Day {{ day.n }}</p>
+      <h2 class="sday__title">{{ day.weekday }} {{ day.date }}</h2>
+      <p class="sday__meta num">{{ day.start }} to {{ day.end }}</p>
+    </header>
+
+    <div class="sday__body">
+      {% for s in day.sessions %}
+        {% if s.typeKey == "break" %}
+        <div class="slotbreak">
+          <span class="slotbreak__time num">{{ s.start }}</span>
+          <span class="slotbreak__name">{{ s.title }}</span>
+          <span class="slotbreak__dur util num">{{ s.duration }}</span>
+        </div>
+        {% else %}
+        <article class="slot slot--{{ s.typeKey }}">
+          <div class="slot__when">
+            <p class="slot__range num">{{ s.start }}<span class="slot__dash" aria-hidden="true"></span>{{ s.end }}</p>
+            <p class="slot__dur util num">{{ s.duration }}</p>
+            <p class="slot__type util">{{ s.type }}</p>
+          </div>
+          <div class="slot__what">
+            <h3 class="slot__title">{{ s.title }}</h3>
+            {% if s.subtitle %}<p class="slot__sub">{{ s.subtitle }}</p>{% endif %}
+            {% if s.body | length %}
+            <div class="slot__copy">{% for para in s.body %}<p>{{ para }}</p>{% endfor %}</div>
+            {% endif %}
+            {% if s.speakers | length %}
+            <ul class="slot__speakers">
+              {% for p in s.speakers %}
+              <li class="slot__speaker">
+                {% if p.photo %}<img src="{{ p.photo }}" alt="" loading="lazy" width="72" height="72">{% endif %}
+                <span>{{ p.name }}</span>
+              </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+            {% if s.room %}<p class="slot__room util">{{ s.room }}</p>{% endif %}
+          </div>
+        </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+
+  <p class="sched-note label">{{ schedule.note }}</p>
+</div>

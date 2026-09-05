@@ -6,6 +6,10 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("jsonify", (value) => JSON.stringify(value));
 
+  // Rows of a list whose key equals value, e.g. sponsors | where("tier", "Exhibitor")
+  eleventyConfig.addFilter("where", (list, key, value) =>
+    (list || []).filter((item) => item && item[key] === value));
+
   return {
     dir: {
       input: "src",

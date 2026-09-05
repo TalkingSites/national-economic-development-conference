@@ -12,7 +12,7 @@
         {% for para in day.body %}<p>{{ para }}</p>{% endfor %}
       </div>
     </div>
-    <div class="day__media"><img src="{{ day.image }}" alt="{{ day.alt }}" loading="lazy"></div>
+    <div class="day__media"><img src="{{ day[dayImages] if dayImages and day[dayImages] else day.image }}" alt="{{ day.alt }}" loading="lazy"></div>
     {% set sessions = day.sessions %}
     {% include "partials/session-index.njk" %}
   </div>

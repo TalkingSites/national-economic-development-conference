@@ -1,0 +1,8 @@
+{# Compact ink header for interior pages. One heading, then a lede. #}
+<header class="page-head">
+  <div class="wrap page-head__inner">
+    <h1 class="page-head__title">{{ heading | default(title) }}</h1>
+    {% if lede %}<p class="page-head__lede">{{ lede }}</p>{% endif %}
+    {% if headMeta %}<p class="util page-head__meta">{{ headMeta }}</p>{% endif %}
+  </div>
+</header>

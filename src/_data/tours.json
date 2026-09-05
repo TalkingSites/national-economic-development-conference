@@ -1,0 +1,133 @@
+{
+  "intro": "Designed exclusively for registered delegates, our study tours offer a unique opportunity to experience this year's theme in action. From world leading marine science and renewable energy innovation to sustainable agriculture and Hobart's vibrant creative and cultural economy, these curated tours showcase the people, places and projects driving economic transformation in Tasmania.",
+  "note": "Places are limited, so secure your spot and make your time at NEDC26 even more memorable.",
+  "items": [
+    {
+      "number": 1,
+      "title": "The Blue Economy",
+      "date": "Tuesday 13 October 2026",
+      "image": "/assets/images/tours/tours-1.jpg",
+      "body": "Explore how Hobart has become a global leader in marine, Antarctic and climate science, and the critical role it plays in shaping the blue economy. This immersive experience offers rare access to world class research facilities and the scientists driving innovation in ocean and environmental research.",
+      "facts": [
+        {
+          "label": "Price",
+          "value": "$110 per person"
+        },
+        {
+          "label": "Time",
+          "value": "9:15am to 2:30pm"
+        },
+        {
+          "label": "Included",
+          "value": "Lunch"
+        },
+        {
+          "label": "Places",
+          "value": "Limited to 30"
+        }
+      ],
+      "highlights": [
+        "An exclusive, behind the scenes tour of the Institute for Marine and Antarctic Studies (IMAS), including advanced laboratories and research facilities",
+        "Insights from leading researchers on cutting edge work in marine science, climate change and threatened species conservation",
+        "A visit to CSIRO's Hobart Marine Laboratories, home to Australia's Marine National Facility and the RV Investigator",
+        "Exploration of CSIRO's world leading marine and environmental research programs"
+      ],
+      "footnote": "Delegates are required to wear enclosed shoes for this tour. This is a walking tour, and a reasonable level of fitness is required."
+    },
+    {
+      "number": 2,
+      "title": "Renewables, Green Economy and Advanced Manufacturing",
+      "date": "Tuesday 13 October 2026",
+      "image": "/assets/images/tours/tours-2.jpg",
+      "body": "Experience Tasmania's leadership in clean energy, sustainable industry and advanced manufacturing. This tour connects you with the organisations and technologies driving the transition to a low carbon future.",
+      "facts": [
+        {
+          "label": "Price",
+          "value": "$145 per person"
+        },
+        {
+          "label": "Time",
+          "value": "9:45am to 4:00pm"
+        },
+        {
+          "label": "Included",
+          "value": "Lunch"
+        },
+        {
+          "label": "Places",
+          "value": "Limited to 48"
+        }
+      ],
+      "highlights": [
+        "Guided tour of Incat, a global leader in sustainable ferry manufacturing and green shipbuilding",
+        "A visit to Southern Waste Solutions to explore innovative circular economy and waste management initiatives",
+        "Insights from AQ1 Systems on AI driven aquaculture and sustainable food production",
+        "Tour of BOC's hydrogen electrolyser facility, showcasing emerging decarbonisation technologies",
+        "Overview of Hydro Tasmania's renewable energy leadership, including Project Marinus"
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Sustainable Agriculture",
+      "date": "Tuesday 13 October 2026",
+      "image": "/assets/images/tours/tours-3.jpg",
+      "body": "Explore how innovation, sustainability and diversification are shaping the future of agriculture in Greater Hobart. Meet the businesses redefining what modern agriculture can look like.",
+      "facts": [
+        {
+          "label": "Price",
+          "value": "$165 per person"
+        },
+        {
+          "label": "Time",
+          "value": "10:00am to 3:30pm"
+        },
+        {
+          "label": "Included",
+          "value": "Lunch"
+        },
+        {
+          "label": "Places",
+          "value": "Limited to 30"
+        }
+      ],
+      "highlights": [
+        "Tour of Tunnel Hill Mushrooms, a unique enterprise producing gourmet mushrooms in a historic railway tunnel",
+        "A visit to Marinova, a global leader in marine biotechnology and seaweed based health products",
+        "Light lunch featuring local produce",
+        "A visit to Killara Distillery to learn about premium spirit production and Tasmania's craft distilling heritage"
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Creative and Cultural Economy",
+      "date": "Friday 16 October 2026",
+      "optional": true,
+      "image": "/assets/images/tours/tours-4.jpg",
+      "body": "Extend your NEDC26 experience with a special post conference study tour, designed for those wanting to dive deeper into what makes Greater Hobart unique. Discover how arts and culture are central to the region's identity, liveability and economic success, from globally renowned attractions to grassroots community spaces.",
+      "facts": [
+        {
+          "label": "Price",
+          "value": "$195 per person"
+        },
+        {
+          "label": "Time",
+          "value": "9:00am to 4:00pm"
+        },
+        {
+          "label": "Included",
+          "value": "Lunch"
+        },
+        {
+          "label": "Places",
+          "value": "Limited to 25"
+        }
+      ],
+      "highlights": [
+        "Ferry trip to the Museum of Old and New Art (MONA), including a guided tour and insights into its global impact",
+        "A visit to Moonah Arts Centre, showcasing community arts, local engagement and cultural development",
+        "Behind the scenes tours of the historic Theatre Royal and Studio Theatre",
+        "Exploration of the Tasmanian Museum and Art Gallery (TMAG), focusing on heritage, exhibitions and cultural tourism"
+      ]
+    }
+  ]
+}

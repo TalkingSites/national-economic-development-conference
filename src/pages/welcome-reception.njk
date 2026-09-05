@@ -1,0 +1,42 @@
+---
+layout: page.njk
+title: "Welcome Reception | NEDC26"
+heading: "NEDC26 Welcome Reception"
+lede: "An evening on Hobart's waterfront at the award winning Mures Upper Deck, overlooking Victoria Dock."
+headMeta: "Tuesday 13 October 2026, 5pm to 8pm, Mures Tasmania"
+permalink: "/welcome-reception/"
+ctaHeading: "Additional tickets are available"
+ctaText: "The Welcome Reception is included with full registration. Extra tickets are $150 per person."
+---
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <dl class="spec">
+        <div class="spec__row"><dt class="util spec__k">Date</dt><dd class="spec__v num">Tuesday 13 October</dd></div>
+        <div class="spec__row"><dt class="util spec__k">Time</dt><dd class="spec__v num">5pm to 8pm</dd></div>
+        <div class="spec__row"><dt class="util spec__k">Venue</dt><dd class="spec__v">Mures Upper Deck</dd></div>
+        <div class="spec__row"><dt class="util spec__k">Included</dt><dd class="spec__v">Full registration</dd></div>
+        <div class="spec__row"><dt class="util spec__k">Extra tickets</dt><dd class="spec__v num">$150 per person</dd></div>
+      </dl>
+    </div>
+    <div class="stack">
+      <div class="prose">
+        <p>Begin your NEDC26 experience with an evening on Hobart's spectacular waterfront. Set against the backdrop of Victoria Dock, the Welcome Reception invites delegates to unwind and connect over exceptional local produce, premium Tasmanian hospitality and sweeping harbour views.</p>
+        <p>With its refined atmosphere and unmistakable sense of place, this opening event offers a memorable introduction to both the conference and the destination, bringing together industry leaders and delegates for an evening of conversation, connection and celebration in one of Hobart's most iconic settings.</p>
+      </div>
+      <p>{% set btnText = "Book additional tickets" %}{% set btnHref = event.socialsUrl %}{% set btnStyle = "outline" %}{% include "partials/btn.njk" %}</p>
+      <p class="util" style="color: var(--text-mute)">Proudly sponsored by Lucid Economics</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sunk">
+  <div class="wrap stack-l">
+    {% set headHeading = galleries.welcome.heading %}
+    {% set headAside = false %}
+    {% include "partials/section-head.njk" %}
+    {% set images = galleries.welcome.images %}
+    {% set galleryId = "welcome" %}
+    {% include "partials/gallery-grid.njk" %}
+  </div>
+</section>

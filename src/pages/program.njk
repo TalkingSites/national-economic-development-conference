@@ -1,0 +1,22 @@
+---
+layout: page.njk
+title: "Program overview | NEDC26"
+heading: "Get ready for an inspiring program"
+lede: "The NEDC26 program brings together keynote speakers, thought provoking sessions, interactive workshops, breakout discussions, study tours and networking."
+permalink: "/program/"
+---
+<section class="section">
+  <div class="wrap split">
+    <div class="stack-s">
+      {% set btnText = "View full program" %}{% set btnHref = "/full-program/" %}{% set btnStyle = "outline" %}
+      {% include "partials/btn.njk" %}
+    </div>
+    <div class="prose">
+      <p>Guided by the theme <em>Place to Prosperity: Innovation, Transition and Investment Attraction</em>, the program explores the ideas, challenges and opportunities shaping the future of economic development, with a strong focus on practical insights, real world examples and meaningful connection.</p>
+      <p>Explore the overview below for a snapshot of what to expect across each day, or view the full conference program for session times, speakers, breakout options, workshops, study tours and special events.</p>
+    </div>
+  </div>
+</section>
+
+{% set dayImages = "imageProgram" %}
+{% include "partials/program.njk" %}

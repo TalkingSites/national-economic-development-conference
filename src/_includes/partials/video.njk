@@ -1,0 +1,13 @@
+{# A poster frame with our own play control. The YouTube player is only
+   inserted once someone presses play, so the page stays clean and fast. #}
+<figure class="video">
+  <button class="video__play" type="button"
+          data-video="{{ videoId }}"
+          aria-label="Play {{ videoTitle | default('the film') }}">
+    <img class="video__poster" src="{{ videoPoster }}" alt="" loading="lazy">
+    <span class="video__button" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="26" height="26"><path d="M8 5.2v13.6L19 12z" fill="currentColor"/></svg>
+    </span>
+    <span class="video__label">{{ videoTitle | default('Watch the film') }}</span>
+  </button>
+</figure>

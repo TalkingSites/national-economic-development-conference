@@ -15,9 +15,28 @@
     "credit": "kunanyi / Mount Wellington"
   },
   "facts": [
-    { "label": "Dates",        "value": "13 to 15 October 2026", "numeric": true },
-    { "label": "Venue",        "value": "Crowne Plaza, Hobart" },
-    { "label": "Format",       "value": "Three days, plus an optional tour on 16 October" },
-    { "label": "Registration", "value": "Open now" }
-  ]
+    {
+      "label": "Dates",
+      "value": "13 to 15 October 2026",
+      "numeric": true
+    },
+    {
+      "label": "Venue",
+      "value": "Crowne Plaza, Hobart"
+    },
+    {
+      "label": "Format",
+      "value": "Three days, plus an optional tour on 16 October"
+    },
+    {
+      "label": "Registration",
+      "value": "Open now"
+    }
+  ],
+  "socialsUrl": "https://au.entegy.events/socials",
+  "exhibitorUrl": "https://au.entegy.events/exhibitorsponsor",
+  "prospectusUrl": "https://au.entegy.events/exhibitorsponsor",
+  "edaUrl": "https://www.edaustralia.com.au/",
+  "highlightsVideoId": "WLybscUyYtI",
+  "highlightsVideoPoster": "/assets/images/video-poster.jpg"
 }

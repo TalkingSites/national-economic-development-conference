@@ -1,0 +1,10 @@
+[
+  { "name": "Crowne Plaza Hobart", "phone": "(03) 6213 4200", "venue": true,
+    "note": "NEDC26 delegates can access exclusive accommodation rates at Crowne Plaza Hobart for the conference period. A limited number of rooms are available at these rates, so book early.",
+    "url": "https://www.crowneplazahobart.com.au/" },
+  { "name": "RACV Hobart", "phone": "03 6270 8600", "url": "https://www.racv.com.au/travel-experiences/racv-resorts/our-destinations/hobart-hotel.html" },
+  { "name": "DoubleTree Hilton Hobart", "phone": "03 6213 0000", "url": "https://www.hilton.com/en/hotels/hbahodi-doubletree-hobart/" },
+  { "name": "Movenpick Hotel Hobart", "phone": "03 6235 9888", "url": "https://www.movenpick.com/en/pacific/australia/hobart/hotel-hobart.html" },
+  { "name": "Vibe Hotel Hobart", "phone": "03 6240 5600", "url": "https://www.tfehotels.com/en/hotels/vibe-hotels/hobart/" },
+  { "name": "The Henry Jones Art Hotel", "phone": "03 6210 7700", "url": "https://www.thehenryjones.com/" }
+]

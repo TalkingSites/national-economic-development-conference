@@ -1,0 +1,39 @@
+---
+layout: page.njk
+title: "Accommodation | NEDC26"
+heading: "Your NEDC26 stay starts here"
+lede: "Hobart offers a range of accommodation to suit different styles and budgets, all within easy reach of the conference and the waterfront."
+permalink: "/accommodation/"
+ctaHeading: "Book early to secure your preferred option"
+ctaText: "A limited number of rooms are available at the delegate rate."
+---
+<section class="section">
+  <div class="wrap stack-l">
+    <div class="prose">
+      <p>Whether you are planning a quick visit for the conference only or extending your stay to explore more of Tasmania, these hotels provide a comfortable and convenient base. We encourage delegates to book early.</p>
+    </div>
+    <div class="listing">
+      {% for h in accommodation %}
+      <div class="listing__row{% if h.note %} listing__row--stacked{% endif %}">
+        <div class="stack-s">
+          <p class="listing__name">{{ h.name }}</p>
+          {% if h.venue %}<p><span class="badge">Conference venue</span></p>{% endif %}
+        </div>
+        <div class="listing__meta">
+          <p class="num">{{ h.phone }}</p>
+          {% if h.note %}<p style="margin-top:.4em">{{ h.note }}</p>{% endif %}
+        </div>
+        <div class="listing__actions">
+          {% if h.venue %}
+            {% set btnText = "Delegate rate" %}{% set btnHref = event.registerUrl %}{% set btnStyle = "primary" %}{% set btnSize = "sm" %}
+            {% include "partials/btn.njk" %}
+          {% endif %}
+          {% set btnText = "Website" %}{% set btnHref = h.url %}{% set btnStyle = "outline" %}{% set btnSize = "sm" %}
+          {% include "partials/btn.njk" %}
+          {% set btnSize = false %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

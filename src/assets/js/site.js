@@ -62,49 +62,59 @@
     }
   });
 
-  /* --- Theme: auto (follows the system), light, dark ---
-     Auto stores nothing and leaves the root unstamped, so the CSS falls back
-     to prefers-color-scheme. Light and dark stamp data-theme, which the token
-     stylesheet honours over the media query in both directions. --- */
+  /* --- Theme ---
+     Two states. The page follows the operating system until someone chooses,
+     and the choice is stored. A three way cycle was wrong here: its "auto"
+     state looks identical to whichever mode the system is already in, so one
+     press in three appeared to do nothing. --- */
   var THEME_KEY = 'nedc-theme';
-  var MODES = ['auto', 'light', 'dark'];
-  var LABELS = {
-    auto:  'Theme follows your system. Switch to light theme.',
-    light: 'Light theme. Switch to dark theme.',
-    dark:  'Dark theme. Switch to following your system.'
-  };
   var themeBtn = document.getElementById('themeToggle');
+  var darkQuery = window.matchMedia ? matchMedia('(prefers-color-scheme: dark)') : null;
 
-  function readMode() {
+  function storedTheme() {
     try {
-      var stored = localStorage.getItem(THEME_KEY);
-      return MODES.indexOf(stored) > 0 ? stored : 'auto';
-    } catch (e) { return 'auto'; }
+      var v = localStorage.getItem(THEME_KEY);
+      return v === 'light' || v === 'dark' ? v : null;
+    } catch (e) { return null; }
   }
 
-  function applyMode(mode) {
-    var root = document.documentElement;
-    if (mode === 'auto') root.removeAttribute('data-theme');
-    else root.setAttribute('data-theme', mode);
+  function activeTheme() {
+    return storedTheme() || (darkQuery && darkQuery.matches ? 'dark' : 'light');
+  }
 
-    try {
-      if (mode === 'auto') localStorage.removeItem(THEME_KEY);
-      else localStorage.setItem(THEME_KEY, mode);
-    } catch (e) {}
-
+  function paintToggle() {
     if (!themeBtn) return;
+    var next = activeTheme() === 'dark' ? 'light' : 'dark';
     Array.prototype.forEach.call(themeBtn.querySelectorAll('[data-theme-icon]'), function (icon) {
-      icon.hidden = icon.getAttribute('data-theme-icon') !== mode;
+      /* Attribute, not the .hidden property: these are SVG elements, and
+         .hidden is only defined on HTMLElement, so assigning it would set a
+         harmless expando and leave the icon hidden. */
+      if (icon.getAttribute('data-theme-icon') === next) icon.removeAttribute('hidden');
+      else icon.setAttribute('hidden', '');
     });
-    themeBtn.setAttribute('aria-label', LABELS[mode]);
-    themeBtn.setAttribute('title', LABELS[mode]);
+    var label = next === 'dark' ? 'Switch to dark theme' : 'Switch to light theme';
+    themeBtn.setAttribute('aria-label', label);
+    themeBtn.setAttribute('title', label);
+  }
+
+  function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    try { localStorage.setItem(THEME_KEY, theme); } catch (e) {}
+    paintToggle();
   }
 
   if (themeBtn) {
-    applyMode(readMode());
+    paintToggle();
     themeBtn.addEventListener('click', function () {
-      applyMode(MODES[(MODES.indexOf(readMode()) + 1) % MODES.length]);
+      setTheme(activeTheme() === 'dark' ? 'light' : 'dark');
     });
+  }
+
+  /* While no choice is stored, follow the system if it changes. */
+  if (darkQuery) {
+    var onSystemChange = function () { if (!storedTheme()) paintToggle(); };
+    if (darkQuery.addEventListener) darkQuery.addEventListener('change', onSystemChange);
+    else if (darkQuery.addListener) darkQuery.addListener(onSystemChange);
   }
 
   /* --- Header gains a rule once the page scrolls --- */

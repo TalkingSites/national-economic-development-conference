@@ -1,0 +1,35 @@
+---
+layout: page.njk
+title: "Sponsorship opportunities | NEDC26"
+heading: "Connect with Australia's economic development leaders"
+lede: "NEDC26 is EDA's flagship event and the premier annual gathering for the economic development sector."
+permalink: "/sponsorship/"
+ctaHeading: "Secure your place in the 2026 prospectus"
+ctaText: "Tailored packages are available to suit your marketing objectives and budget."
+---
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <dl class="spec">
+        <div class="spec__row"><dt class="util spec__k">Audience</dt><dd class="spec__v num">2,500+ EDA members</dd></div>
+        <div class="spec__row"><dt class="util spec__k">Event</dt><dd class="spec__v">EDA flagship conference</dd></div>
+        <div class="spec__row"><dt class="util spec__k">Dates</dt><dd class="spec__v num">{{ event.dates }}</dd></div>
+        <div class="spec__row"><dt class="util spec__k">Location</dt><dd class="spec__v">{{ event.venue }}, {{ event.city }}</dd></div>
+      </dl>
+    </div>
+    <div class="stack">
+      <div class="prose">
+        <p>As the national peak body for economic development professionals, EDA represents over 2,500 members, giving sponsors access to a highly engaged and influential national network.</p>
+        <p>With the theme <em>Place to Prosperity: Innovation, Transition and Investment Attraction</em>, NEDC26 brings together economic developers, urban shapers, policymakers, economists, place makers, and industry development, investment attraction, innovation and cluster specialists from across the country.</p>
+        <p>For sponsors, NEDC26 offers an opportunity to build authentic, high value connections with the people shaping Australia's local and regional economies. The 2026 prospectus features a wide range of opportunities to position your organisation strongly.</p>
+        <p>Join us in Hobart, on the traditional lands of the Muwinina and Palawa people, for one of Australia's most exciting conversations about growth, change and prosperity.</p>
+      </div>
+      <div class="cta-actions">
+        {% set btnText = "Become a sponsor" %}{% set btnHref = event.exhibitorUrl %}{% set btnStyle = "primary" %}
+        {% include "partials/btn.njk" %}
+        {% set btnText = "Talk to the team" %}{% set btnHref = "mailto:" + site.email %}{% set btnStyle = "outline" %}
+        {% include "partials/btn.njk" %}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,42 @@
+---
+layout: page.njk
+title: "Contact | NEDC26"
+heading: "Contact the NEDC26 team"
+lede: "For anything the site does not cover, get in touch."
+permalink: "/contact/"
+cta: false
+---
+<section class="section">
+  <div class="wrap listing">
+    {% for c in contact %}
+    <div class="listing__row listing__row--stacked">
+      <div class="stack-s">
+        <p class="listing__name">{{ c.purpose }}</p>
+        <p class="util" style="color: var(--text-mute)">{{ c.name }}</p>
+      </div>
+      <div class="listing__meta">
+        <p><a class="link" href="mailto:{{ c.email }}">{{ c.email }}</a></p>
+        <p class="num"><a class="link" href="tel:{{ c.phone | replace(' ', '') }}">{{ c.phone }}</a></p>
+      </div>
+      <div class="listing__actions">
+        {% set btnText = "Email" %}{% set btnHref = "mailto:" + c.email %}{% set btnStyle = "outline" %}{% set btnSize = "sm" %}
+        {% include "partials/btn.njk" %}
+        {% set btnSize = false %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section section--sunk">
+  <div class="wrap split">
+    <div><h2 class="h-s">Where to find us</h2></div>
+    <div class="stack">
+      <dl class="spec">
+        <div class="spec__row"><dt class="util spec__k">Venue</dt><dd class="spec__v">{{ event.venue }}, {{ event.city }} ({{ event.cityFirstNations }})</dd></div>
+        <div class="spec__row"><dt class="util spec__k">Dates</dt><dd class="spec__v num">{{ event.dates }}</dd></div>
+        <div class="spec__row"><dt class="util spec__k">Presented by</dt><dd class="spec__v">{{ site.presentedBy }}</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
