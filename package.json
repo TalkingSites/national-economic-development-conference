@@ -1,0 +1,13 @@
+{
+  "name": "nedc26",
+  "version": "1.0.0",
+  "description": "2026 National Economic Development Conference, Hobart. Eleventy site built on the SpaceClub content model with the NEDC26 design system.",
+  "private": true,
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve --port=4173",
+    "build": "npx @11ty/eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

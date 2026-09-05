@@ -1,0 +1,2 @@
+{# text: label · href: destination · style: primary | outline | on-slab · size: sm #}
+<a class="btn btn--{{ btnStyle | default('primary') }}{% if btnSize %} btn--{{ btnSize }}{% endif %}" href="{{ btnHref }}">{{ btnText }}</a>

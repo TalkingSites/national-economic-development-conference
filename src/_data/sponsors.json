@@ -1,0 +1,67 @@
+[
+  {
+    "name": "City of Hobart",
+    "logo": "/assets/images/spon-city-of-hobart.png",
+    "cap": 58
+  },
+  {
+    "name": "Business Events Tasmania",
+    "logo": "/assets/images/spon-business-events-tasmania.png",
+    "cap": 26
+  },
+  {
+    "name": "Curtin University",
+    "logo": "/assets/images/spon-curtin-university.png",
+    "cap": 26
+  },
+  {
+    "name": "GrantGuru",
+    "logo": "/assets/images/spon-grantguru.png",
+    "cap": 26
+  },
+  {
+    "name": "ACRE, Thriving Rural Futures",
+    "logo": "/assets/images/spon-acre.png",
+    "cap": 48
+  },
+  {
+    "name": "Lucid Economics",
+    "logo": "/assets/images/spon-lucid-economics.png",
+    "cap": 40
+  },
+  {
+    "name": "Geografia",
+    "logo": "/assets/images/spon-geografia.png",
+    "cap": 32
+  },
+  {
+    "name": "uWorkin",
+    "logo": "/assets/images/spon-uworkin.png",
+    "cap": 32
+  },
+  {
+    "name": "AEC, Outcome Driven",
+    "logo": "/assets/images/spon-aec.png",
+    "cap": 48
+  },
+  {
+    "name": "Monitor CRMS",
+    "logo": "/assets/images/spon-monitor-crms.png",
+    "cap": 48
+  },
+  {
+    "name": "REMPLAN",
+    "logo": "/assets/images/spon-remplan.png",
+    "cap": 32
+  },
+  {
+    "name": "Mable",
+    "logo": "/assets/images/spon-mable.png",
+    "cap": 58
+  },
+  {
+    "name": "Hobart Airport Tasmania",
+    "logo": "/assets/images/spon-hobart-airport.png",
+    "cap": 40
+  }
+]

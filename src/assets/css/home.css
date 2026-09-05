@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Home page composition. Shared primitives live in the two stylesheets above.
+   ========================================================================== */
+
+/* --- Hero: ink slab, typographic panel left, kunanyi photograph bleeding right --- */
+.hero { position: relative; background: var(--slab); color: var(--text-on-slab); overflow: hidden; }
+.hero::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background:
+    repeating-radial-gradient(ellipse 960px 440px at 4% 84%, rgba(191,35,96,.13) 0 1px, transparent 1px 27px),
+    repeating-radial-gradient(ellipse 720px 350px at 26% 104%, rgba(131,41,138,.11) 0 1px, transparent 1px 23px);
+}
+.hero__grid { position: relative; display: grid; }
+@media (min-width: 940px) { .hero__grid { grid-template-columns: 1.06fr .94fr; align-items: stretch; } }
+
+.hero__panel {
+  display: grid; align-content: center; gap: var(--s5);
+  padding-block: clamp(2.75rem, 5.5vw, 5rem);
+  padding-inline: var(--gutter);
+  padding-left: max(var(--gutter), calc((100vw - var(--wrap)) / 2 + var(--gutter)));
+}
+@media (min-width: 940px) { .hero__panel { padding-right: clamp(1.5rem, 3.5vw, 3.25rem); } }
+
+.hero__title { font-size: var(--step-5); font-stretch: 124%; font-weight: 800; line-height: .95; max-width: 12ch; }
+.hero__theme { font-size: var(--step-2); line-height: 1.32; max-width: 24ch; color: var(--text-on-slab-soft); }
+.hero__theme .grad { font-family: var(--font-display); font-weight: 700; font-stretch: 110%; letter-spacing: -.015em; }
+.hero__meta { display: grid; gap: .3rem; color: var(--text-on-slab); }
+.hero__meta .util { color: var(--text-on-slab-mute); }
+.hero__meta strong { font-family: var(--font-display); font-weight: 600; font-stretch: 108%; font-size: var(--step-1); }
+.hero__cta { display: flex; flex-wrap: wrap; gap: .6rem; padding-top: .4rem; }
+
+.hero__media { position: relative; min-height: 300px; }
+@media (min-width: 940px) { .hero__media { min-height: 100%; } }
+.hero__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 56% 42%; }
+.hero__media::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, var(--slab) 0%, rgba(20,18,58,0) 34%);
+}
+@media (min-width: 940px) {
+  .hero__media::after { background: linear-gradient(90deg, var(--slab) 0%, rgba(20,18,58,0) 38%); }
+}
+.hero__credit {
+  position: absolute; right: var(--s4); bottom: var(--s3); z-index: 2;
+  color: rgba(255,255,255,.72); font-size: var(--step--2); font-family: var(--font-util);
+  letter-spacing: .06em; text-transform: uppercase;
+}
+.hero__facts { position: relative; border-top: 1px solid var(--line-on-slab); }
+
+/* --- Theme statement --- */
+.theme-grid { display: grid; gap: var(--s7); align-items: start; }
+@media (min-width: 900px) { .theme-grid { grid-template-columns: minmax(0, 1.5fr) minmax(240px, .85fr); column-gap: var(--s9); } }
+.theme-mark { display: grid; gap: var(--s4); justify-items: start; }
+.theme-mark .logo-plate { max-width: 340px; }
+.theme-mark img { width: 100%; }
+.theme-mark .rule { width: 68px; }
+
+/* --- Program --- */
+.section-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--s4); }
+.section-head + .rule { margin-top: var(--s4); }
+
+/* --- Closing call to action --- */
+.cta-slab { background: var(--slab-2); color: var(--text-on-slab); }
+.cta-grid { display: grid; gap: var(--s6); align-items: center; }
+@media (min-width: 880px) { .cta-grid { grid-template-columns: minmax(0,1fr) auto; column-gap: var(--s8); } }
+.cta-grid h2 { font-size: var(--step-4); }
+.cta-actions { display: flex; flex-wrap: wrap; gap: .6rem; }
+
+/* --- Footer --- */
+.site-footer { background: var(--slab); color: var(--text-on-slab); }
+.footer-brand { display: grid; gap: var(--s4); align-content: start; }
+.footer-brand img { width: 190px; border-radius: var(--r-flat); }
+.footer-meta { display: flex; flex-wrap: wrap; gap: var(--s5); align-items: center;
+               border-top: 1px solid var(--line-on-slab); padding-top: var(--s5); color: var(--text-on-slab-mute); }
+.footer-meta a { color: var(--text-on-slab-soft); }

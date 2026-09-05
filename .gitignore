@@ -1,0 +1,22 @@
+# Dependencies and build output, both regenerable
+node_modules/
+_site/
+.cache/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Host tooling
+.netlify/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

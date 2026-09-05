@@ -1,0 +1,10 @@
+<section class="section section--sunk" id="sponsors">
+  <div class="wrap stack-l">
+    {% set headHeading = "Sponsors" %}
+    {% set headAside = '<p class="util" style="color: var(--text-mute)">' + site.title + ' partners</p>' %}
+    {% include "partials/section-head.njk" %}
+    {% set logos = sponsors %}
+    {% include "partials/logo-wall.njk" %}
+    <p class="lede prose">Sponsorship packages put your organisation in front of Australia's economic development sector. <a class="link" href="mailto:{{ site.email }}">Ask about sponsorship opportunities</a>.</p>
+  </div>
+</section>

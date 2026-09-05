@@ -1,0 +1,37 @@
+{
+  "title": "NEDC26",
+  "titleLong": "2026 National Economic Development Conference",
+  "description": "The 2026 National Economic Development Conference, Place to Prosperity, is held at the Crowne Plaza in Hobart (Nipaluna) from 13 to 15 October 2026. Registrations are open.",
+  "logo": "/assets/images/logo-nedc26-lockup.png",
+  "favicon": "/assets/images/favicon.png",
+  "themeColorLight": "#fbf9f6",
+  "themeColorDark": "#100e2b",
+  "lang": "en-AU",
+  "email": "events@edaustralia.com.au",
+  "presentedBy": "Economic Development Australia",
+  "social": [
+    {
+      "title": "Facebook",
+      "href": "https://www.facebook.com/EDAustralia"
+    },
+    {
+      "title": "LinkedIn",
+      "href": "https://www.linkedin.com/school/economic-development-australia/"
+    }
+  ],
+  "acknowledgement": {
+    "heading": "Acknowledgement of Country",
+    "body": "Economic Development Australia proudly acknowledges Australia's Aboriginal and Torres Strait Islander community and their rich culture, and pays respect to their Elders past and present. We acknowledge Aboriginal and Torres Strait Islander peoples as Australia's first peoples and as the Traditional Owners and custodians of the land and water on which we rely. We recognise and value the ongoing contribution of Aboriginal and Torres Strait Islander people and communities to Australian life and how this enriches us. We embrace the spirit of reconciliation, working towards the equality of outcomes and ensuring an equal voice.",
+    "_localNote": "Optional second paragraph acknowledging the Traditional Owners of the land the conference is held on. Confirm the wording with the Tasmanian Aboriginal Centre before publishing; leave empty until then.",
+    "local": "",
+    "_artworkNote": "Commission from an Aboriginal or Torres Strait Islander artist and credit them here. The panel and credit line only render once `src` is set, so the band stays correct while empty.",
+    "artwork": {
+      "src": "",
+      "alt": "",
+      "artist": "",
+      "title": "",
+      "community": "",
+      "url": ""
+    }
+  }
+}

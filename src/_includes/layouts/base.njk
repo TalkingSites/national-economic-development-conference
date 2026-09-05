@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title | default(site.titleLong) }}</title>
+<meta name="description" content="{{ description | default(site.description) }}">
+<meta name="theme-color" content="{{ site.themeColorLight }}" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="{{ site.themeColorDark }}" media="(prefers-color-scheme: dark)">
+<script>
+/* Runs before first paint so a stored theme choice never flashes the other one. */
+(function () {
+  try {
+    var t = localStorage.getItem("nedc-theme");
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+  } catch (e) {}
+})();
+</script>
+<link rel="icon" href="{{ site.favicon }}" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Newsreader:opsz,wght@6..72,300..700&display=swap">
+<link rel="stylesheet" href="/assets/css/nedc-tokens.css">
+<link rel="stylesheet" href="/assets/css/nedc-components.css">
+{% for sheet in styles %}<link rel="stylesheet" href="{{ sheet }}">
+{% endfor %}</head>
+<body>
+
+{% include "partials/navbar.njk" %}
+
+{{ content | safe }}
+
+{% include "partials/footer.njk" %}
+
+<script src="/assets/js/site.js"></script>
+</body>
+</html>

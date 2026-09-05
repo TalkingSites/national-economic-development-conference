@@ -1,0 +1,14 @@
+{# facts: [{ label, value, numeric }] — defaults to the conference facts #}
+{% set rows = facts | default(event.facts) %}
+<div class="hero__facts">
+  <div class="wrap">
+    <div class="facts">
+      {% for f in rows %}
+      <div class="fact">
+        <p class="util fact__k">{{ f.label }}</p>
+        <p class="fact__v{% if f.numeric %} num{% endif %}">{{ f.value }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

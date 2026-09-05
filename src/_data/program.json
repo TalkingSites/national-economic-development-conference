@@ -1,0 +1,74 @@
+{
+  "days": [
+    {
+      "date": "13",
+      "heading": "Tuesday 13 October",
+      "note": "Study tours and welcome reception",
+      "optional": false,
+      "image": "/assets/images/day1-reception.jpg",
+      "alt": "Delegates talking over drinks at the NEDC welcome reception",
+      "body": [
+        "NEDC26 begins with immersive study tours, taking delegates beyond the conference room and into the places, industries and ideas shaping Tasmania's future.",
+        "Day one closes with the NEDC26 Welcome Reception, a chance to reconnect with national colleagues, meet new peers and ease into the conference with conversation, connection and Tasmanian hospitality."
+      ],
+      "sessions": [
+        { "kind": "Study tour", "name": "The Blue Economy" },
+        { "kind": "Study tour", "name": "Renewables, Green Economy and Advanced Manufacturing" },
+        { "kind": "Study tour", "name": "Sustainable Agriculture" },
+        { "kind": "Evening", "name": "NEDC26 Welcome Reception", "evening": true }
+      ]
+    },
+    {
+      "date": "14",
+      "heading": "Wednesday 14 October",
+      "note": "Plenaries, keynotes and the Awards Gala Dinner",
+      "optional": false,
+      "image": "/assets/images/day2-plenary.jpg",
+      "alt": "A full plenary audience seated in Hobart City Hall",
+      "body": [
+        "Day two launches the main conference program with plenary sessions, keynote presentations and expert panels exploring the ideas, opportunities and leadership challenges shaping the future of places across Australia."
+      ],
+      "sessions": [
+        { "kind": "Plenary", "name": "Place branding and investment attraction" },
+        { "kind": "Plenary", "name": "Community engagement and influencing decision makers" },
+        { "kind": "Plenary", "name": "Precincts, activation and event strategy" },
+        { "kind": "Plenary", "name": "Liveability, prosperity and regional resilience" },
+        { "kind": "Plenary", "name": "Targeted AI implementation" },
+        { "kind": "Evening", "name": "National Economic Development Awards for Excellence Gala Dinner", "evening": true }
+      ]
+    },
+    {
+      "date": "15",
+      "heading": "Thursday 15 October",
+      "note": "Keynotes, masterclasses, workshops and a live debate",
+      "optional": false,
+      "image": "/assets/images/day3-panel.jpg",
+      "alt": "Four panellists in conversation on stage at NEDC",
+      "body": [
+        "Day three builds on the momentum, translating big ideas into practical frameworks, tools and approaches. A mix of strategic insight, practical learning and interactive discussion leaves delegates ready to take new ideas back to their communities."
+      ],
+      "sessions": [
+        { "kind": "Theme", "name": "Place based economies and the Shorefast approach" },
+        { "kind": "Theme", "name": "Investment frameworks" },
+        { "kind": "Theme", "name": "Indigenous economic development" },
+        { "kind": "Theme", "name": "Industry, business and workforce development" },
+        { "kind": "Theme", "name": "Economic development career pathways and leadership" },
+        { "kind": "Theme", "name": "Regenerative tourism" }
+      ]
+    },
+    {
+      "date": "16",
+      "heading": "Friday 16 October",
+      "note": "Optional post conference study tour",
+      "optional": true,
+      "image": "/assets/images/day4-derwent.jpg",
+      "alt": "Gallery buildings on the Derwent River at Berriedale, north of Hobart",
+      "body": [
+        "Extend your NEDC26 experience with the post conference study tour, focused on Hobart's creative and cultural economy. It explores how arts, culture, heritage and community spaces contribute to Greater Hobart's identity, liveability and long term prosperity."
+      ],
+      "sessions": [
+        { "kind": "Study tour", "name": "Hobart's creative and cultural economy" }
+      ]
+    }
+  ]
+}

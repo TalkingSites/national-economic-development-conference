@@ -1,0 +1,23 @@
+<section class="hero">
+  <div class="hero__grid">
+    <div class="hero__panel">
+      <h1 class="hero__title rise">{{ event.name }}</h1>
+      <p class="hero__theme rise rise-2"><span class="grad">{{ event.theme }}.</span> {{ event.themeLine }}</p>
+      <div class="hero__meta rise rise-3">
+        <p class="util">{{ event.city }}, {{ event.cityFirstNations }}</p>
+        <p><strong class="num">{{ event.dates }}</strong>, {{ event.venue }}</p>
+      </div>
+      <div class="hero__cta rise rise-4">
+        {% set btnText = "Register now" %}{% set btnHref = event.registerUrl %}{% set btnStyle = "primary" %}
+        {% include "partials/btn.njk" %}
+        {% set btnText = "See the program" %}{% set btnHref = "#program" %}{% set btnStyle = "on-slab" %}
+        {% include "partials/btn.njk" %}
+      </div>
+    </div>
+    <div class="hero__media">
+      <img src="{{ event.hero.image }}" alt="{{ event.hero.alt }}">
+      <p class="hero__credit">{{ event.hero.credit }}</p>
+    </div>
+  </div>
+  {% include "partials/facts-rail.njk" %}
+</section>

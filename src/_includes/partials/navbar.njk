@@ -1,0 +1,47 @@
+{# Driven by _data/navbar.json. Top level items with `children` render as
+   dropdowns; items with `href` render as plain links. #}
+<header class="site-header" id="siteHeader">
+  <div class="wrap site-header__bar">
+    <a class="site-header__logo" href="/" aria-label="{{ site.title }} home">
+      <img src="{{ site.logo }}" alt="{{ site.titleLong }}, {{ event.dates }}, {{ event.city }} {{ event.cityFirstNations }}">
+    </a>
+    <div class="site-header__spacer"></div>
+
+    <nav class="nav" aria-label="Main">
+      {% for item in navbar %}
+        {% if item.children %}
+        <div class="nav__group">
+          <button class="nav__btn" type="button" aria-expanded="false" aria-controls="m-{{ loop.index }}">{{ item.title }} <i class="nav__caret"></i></button>
+          <div class="nav__menu" id="m-{{ loop.index }}" hidden>
+            {% for child in item.children %}<a href="{{ child.href }}">{{ child.title }}</a>{% endfor %}
+          </div>
+        </div>
+        {% else %}
+        <a class="nav__btn" href="{{ item.href }}">{{ item.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+
+    <div class="site-header__actions">
+      {% include "partials/theme-toggle.njk" %}
+      {% set btnText = "Register" %}{% set btnHref = event.registerUrl %}{% set btnStyle = "primary" %}{% set btnSize = "sm" %}
+      {% include "partials/btn.njk" %}
+      {% set btnSize = false %}
+    </div>
+
+    <button class="menu-toggle" type="button" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <div class="wrap mobile-nav__inner">
+      {% for item in navbar %}
+      <div class="mobile-nav__group">
+        <p class="util">{{ item.title }}</p>
+        {% for child in item.children %}<a href="{{ child.href }}">{{ child.title }}</a>{% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</header>

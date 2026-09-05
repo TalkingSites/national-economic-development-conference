@@ -1,0 +1,23 @@
+{
+  "name": "2026 National Economic Development Conference",
+  "theme": "Place to Prosperity",
+  "themeLine": "Innovation, transition and investment attraction.",
+  "dates": "13 to 15 October 2026",
+  "venue": "Crowne Plaza",
+  "city": "Hobart",
+  "cityFirstNations": "Nipaluna",
+  "registerUrl": "https://au.entegy.events/attendeeregistration",
+  "flyerUrl": "https://drive.google.com/file/d/19661TG7ZzixuOoD7g8kR9Axp5DcLjCk_/view?usp=sharing",
+  "highlightsVideoUrl": "https://www.youtube.com/watch?v=WLybscUyYtI",
+  "hero": {
+    "image": "/assets/images/hero-kunanyi.jpg",
+    "alt": "Sunset over the Derwent estuary from the pinnacle shelter on kunanyi, Mount Wellington, above Hobart",
+    "credit": "kunanyi / Mount Wellington"
+  },
+  "facts": [
+    { "label": "Dates",        "value": "13 to 15 October 2026", "numeric": true },
+    { "label": "Venue",        "value": "Crowne Plaza, Hobart" },
+    { "label": "Format",       "value": "Three days, plus an optional tour on 16 October" },
+    { "label": "Registration", "value": "Open now" }
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Program",
+    "footer": true,
+    "children": [
+      { "title": "Program overview", "href": "/#program" },
+      { "title": "Full program", "href": "/#program" },
+      { "title": "Speakers", "href": "/#program" },
+      { "title": "Study tours", "href": "/#program" },
+      { "title": "Welcome Reception", "href": "/#program" },
+      { "title": "Awards Gala Dinner", "href": "/#program" }
+    ]
+  },
+  {
+    "title": "Sponsorship",
+    "footer": true,
+    "children": [
+      { "title": "Sponsors", "href": "/#sponsors" },
+      { "title": "Sponsorship opportunities", "href": "/#sponsors" }
+    ]
+  },
+  {
+    "title": "Destination",
+    "footer": true,
+    "children": [
+      { "title": "Hobart", "href": "/#top" },
+      { "title": "Accommodation", "href": "/#top" },
+      { "title": "Travel", "href": "/#top" }
+    ]
+  },
+  {
+    "title": "General",
+    "footer": true,
+    "children": [
+      { "title": "About EDA", "href": "/#top" },
+      { "title": "Programming Steering Committee", "href": "/#top" },
+      { "title": "FAQs", "href": "/#top" },
+      { "title": "Contact", "href": "mailto:events@edaustralia.com.au" }
+    ]
+  }
+]

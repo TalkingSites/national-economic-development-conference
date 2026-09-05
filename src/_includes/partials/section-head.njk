@@ -1,0 +1,8 @@
+{# headHeading: the section heading · headAside: optional right-hand note or link (raw HTML) #}
+<div>
+  <div class="section-head">
+    <h2 class="h-l">{{ headHeading }}</h2>
+    {% if headAside %}{{ headAside | safe }}{% endif %}
+  </div>
+  <hr class="rule">
+</div>

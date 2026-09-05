@@ -1,0 +1,9 @@
+{# sessions: [{ kind, name, evening }] — the kind column is information, not decoration #}
+<ul class="sessions day__index">
+  {% for s in sessions %}
+  <li class="session{% if s.evening %} session--evening{% endif %}">
+    <span class="util session__kind">{{ s.kind }}</span>
+    <span class="session__name">{{ s.name }}</span>
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,45 @@
+---
+layout: base.njk
+styles: ["/assets/css/home.css"]
+---
+<main id="top">
+
+  {% include "partials/hero.njk" %}
+
+  <section class="section">
+    <div class="wrap theme-grid">
+      <div class="stack">
+        <h2 class="h-l">{{ event.theme }}</h2>
+        {{ content | safe }}
+        <p><a class="link" href="{{ event.flyerUrl }}">Read the five reasons to attend flyer</a></p>
+      </div>
+      <div class="theme-mark">
+        <div class="logo-plate">
+          <img src="/assets/images/logo-place-to-prosperity.png" alt="{{ event.theme }}: innovation, transition and investment attraction">
+        </div>
+        <hr class="rule">
+        <p class="util" style="color: var(--text-mute)">Presented by {{ site.presentedBy }}</p>
+      </div>
+    </div>
+  </section>
+
+  {% include "partials/program.njk" %}
+  {% include "partials/gallery.njk" %}
+  {% include "partials/sponsors.njk" %}
+
+  <section class="section cta-slab slab-scope">
+    <div class="wrap cta-grid">
+      <div class="stack-s">
+        <h2>Join Australia's economic developers in {{ event.city }}</h2>
+        <p class="lede" style="color: var(--text-on-slab-soft)">Registrations for {{ site.title }} are open, and study tour places are limited.</p>
+      </div>
+      <div class="cta-actions">
+        {% set btnText = "Register now" %}{% set btnHref = event.registerUrl %}{% set btnStyle = "primary" %}
+        {% include "partials/btn.njk" %}
+        {% set btnText = "Contact the team" %}{% set btnHref = "mailto:" + site.email %}{% set btnStyle = "on-slab" %}
+        {% include "partials/btn.njk" %}
+      </div>
+    </div>
+  </section>
+
+</main>

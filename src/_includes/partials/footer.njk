@@ -1,0 +1,31 @@
+<footer class="site-footer slab-scope">
+  <div class="wrap section" style="padding-block: clamp(3rem, 5vw, 4.5rem)">
+    <div class="stack-l">
+      <div class="foot-cols">
+        {% for item in navbar %}{% if item.footer %}
+        <div class="foot-col">
+          <p class="util">{{ item.title }}</p>
+          {% for child in item.children %}<a href="{{ child.href }}">{{ child.title }}</a>{% endfor %}
+        </div>
+        {% endif %}{% endfor %}
+
+        <div class="footer-brand">
+          <img src="{{ site.logo }}" alt="{{ site.titleLong }}">
+          <p class="util" style="color: var(--text-on-slab-mute)">Presented by {{ site.presentedBy }}</p>
+          <p><a class="link" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+          <p class="util">
+            {% for s in site.social %}<a href="{{ s.href }}">{{ s.title }}</a>{% if not loop.last %} &nbsp; {% endif %}{% endfor %}
+          </p>
+        </div>
+      </div>
+
+      {% include "partials/acknowledgement.njk" %}
+
+      <div class="footer-meta util">
+        <span>{{ site.titleLong }}</span>
+        <span>{{ event.dates }}</span>
+        <span>{{ event.venue }}, {{ event.city }}, {{ event.cityFirstNations }}</span>
+      </div>
+    </div>
+  </div>
+</footer>

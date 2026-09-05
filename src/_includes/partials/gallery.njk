@@ -1,0 +1,12 @@
+<section class="section">
+  <div class="wrap stack-l">
+    {% set headHeading = gallery.heading %}
+    {% set headAside = '<p><a class="link util" href="' + event.highlightsVideoUrl + '">Watch the film</a></p>' %}
+    {% include "partials/section-head.njk" %}
+    <div class="gallery">
+      {% for img in gallery.images %}
+      <figure><img src="{{ img.src }}" alt="{{ img.alt }}" loading="lazy"></figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>

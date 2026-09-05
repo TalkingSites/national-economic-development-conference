@@ -1,0 +1,19 @@
+{# day: one entry from _data/program.json #}
+<article class="day{% if day.optional %} day--optional{% endif %}">
+  <div class="day__rail">
+    <span class="day__date">{{ day.date }}</span>
+    <span class="day__line"></span>
+  </div>
+  <div class="day__body">
+    <div class="day__text stack-s">
+      <h3 class="h-m">{{ day.heading }}</h3>
+      <p class="day__note">{{ day.note }}</p>
+      <div class="prose">
+        {% for para in day.body %}<p>{{ para }}</p>{% endfor %}
+      </div>
+    </div>
+    <div class="day__media"><img src="{{ day.image }}" alt="{{ day.alt }}" loading="lazy"></div>
+    {% set sessions = day.sessions %}
+    {% include "partials/session-index.njk" %}
+  </div>
+</article>

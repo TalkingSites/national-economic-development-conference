@@ -1,0 +1,11 @@
+{
+  "heading": "NEDC25 highlights",
+  "images": [
+    { "src": "/assets/images/gal-city-hall.jpg",  "alt": "Keynote presentation to a full room at NEDC25" },
+    { "src": "/assets/images/gal-networking.jpg", "alt": "Two delegates in conversation during a break" },
+    { "src": "/assets/images/gal-audience.jpg",   "alt": "Delegates listening from the front rows of a session" },
+    { "src": "/assets/images/gal-gala.jpg",       "alt": "The Awards for Excellence gala dinner in full swing" },
+    { "src": "/assets/images/gal-foyer.jpg",      "alt": "Delegates networking in the conference foyer" },
+    { "src": "/assets/images/gal-delegates.jpg",  "alt": "Delegates at a table during a conference session" }
+  ]
+}

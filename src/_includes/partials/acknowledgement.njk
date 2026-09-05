@@ -1,0 +1,27 @@
+{# Driven by site.acknowledgement. No visible heading, so the section carries an
+   aria-label to keep the same meaning for screen readers. The artwork panel and
+   its credit only render once an artwork is set. #}
+{% set ack = site.acknowledgement %}
+{% set hasArt = ack.artwork.src %}
+<section class="ack {% if hasArt %}ack--art{% else %}ack--no-art{% endif %}" aria-label="{{ ack.heading }}">
+  <hr class="rule ack__rule">
+  <div class="ack__grid">
+    {% if hasArt %}
+    <figure class="ack__art">
+      <img src="{{ ack.artwork.src }}" alt="{{ ack.artwork.alt }}" loading="lazy">
+      <figcaption class="ack__credit">
+        {% if ack.artwork.title %}<span class="ack__credit-title">{{ ack.artwork.title }}</span>{% endif %}
+        <span class="util">
+          {% if ack.artwork.url %}<a class="link" href="{{ ack.artwork.url }}">{{ ack.artwork.artist }}</a>{% else %}{{ ack.artwork.artist }}{% endif %}
+          {% if ack.artwork.community %}, {{ ack.artwork.community }}{% endif %}
+        </span>
+      </figcaption>
+    </figure>
+    {% endif %}
+
+    <div class="ack__text">
+      <p>{{ ack.body }}</p>
+      {% if ack.local %}<p>{{ ack.local }}</p>{% endif %}
+    </div>
+  </div>
+</section>

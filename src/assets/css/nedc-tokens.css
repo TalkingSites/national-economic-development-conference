@@ -1,0 +1,142 @@
+/* ==========================================================================
+   NEDC26 — Design tokens
+   Single source of truth for colour, type, space, motion.
+   Every token is declared in the bare :root block first; the theme blocks
+   below only redefine values, never introduce new ones.
+   ========================================================================== */
+
+:root {
+  /* --- Brand constants (identical in every theme) ---------------------- */
+  --brand-navy:      #2a2a86;
+  --brand-purple:    #83298a;
+  --brand-crimson:   #bf2360;
+  --brand-ink:       #14123a;
+
+  /* Gradient for light grounds (the identity gradient, unmodified) */
+  --grad: linear-gradient(96deg, #bf2360 0%, #83298a 54%, #2a2a86 100%);
+  /* Lifted variant so gradient type stays legible on ink grounds */
+  --grad-lift: linear-gradient(96deg, #ff5c8d 0%, #c07ae8 50%, #8f8ff5 100%);
+
+  /* --- Surfaces --------------------------------------------------------- */
+  --ground:        #fbf9f6;  /* page */
+  --surface:       #ffffff;  /* raised panels, logo tiles */
+  --surface-sunk:  #f3eff3;  /* recessed strips */
+  --slab:          #14123a;  /* inverted sections */
+  --slab-2:        #1d1a4d;  /* inverted sections, second level */
+
+  /* --- Lines ------------------------------------------------------------ */
+  --line:          #e3dde4;
+  --line-strong:   #c6bccb;
+  --line-on-slab:  rgba(255,255,255,.16);
+
+  /* --- Text ------------------------------------------------------------- */
+  --text:          #1b1938;
+  --text-soft:     #55506e;
+  --text-mute:     #7d7694;
+  --text-on-slab:      #f5f2fa;
+  --text-on-slab-soft: #b9b2d6;
+  --text-on-slab-mute: #8e87ae;
+
+  /* --- Accent (resolved against the current ground) --------------------- */
+  --accent:        #bf2360;
+  --accent-ink:    #a01a50;   /* hover / pressed */
+  --accent-quiet:  #83298a;
+  --on-accent:     #ffffff;
+  --focus:         #bf2360;
+
+  /* --- Type ------------------------------------------------------------- */
+  --font-display: "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body:    "Newsreader", Georgia, "Times New Roman", serif;
+  --font-util:    "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --step--2: 0.75rem;
+  --step--1: 0.8125rem;
+  --step-0:  1.0625rem;
+  --step-1:  1.1875rem;
+  --step-2:  1.4375rem;
+  --step-3:  clamp(1.6rem, 1.32rem + 1.15vw, 2.15rem);
+  --step-4:  clamp(2.05rem, 1.5rem + 2.3vw, 3.1rem);
+  --step-5:  clamp(2.5rem, 1.55rem + 3.95vw, 4.35rem);
+
+  --track-util: .12em;   /* uppercase utility text */
+  --track-tight: -.022em;
+
+  /* --- Space ------------------------------------------------------------ */
+  --s1: .25rem;  --s2: .5rem;   --s3: .75rem;  --s4: 1rem;
+  --s5: 1.5rem;  --s6: 2rem;    --s7: 2.75rem; --s8: 4rem;
+  --s9: 5.5rem;  --s10: 7.5rem;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --measure: 63ch;
+  --wrap: 1220px;
+
+  /* --- Shape ------------------------------------------------------------ */
+  --r-flat: 2px;   /* editorial blocks, images, tiles */
+  --r-pill: 999px; /* buttons and nav, carried over from the brand */
+
+  /* --- Elevation -------------------------------------------------------- */
+  --shadow-lift: 0 1px 2px rgba(20,18,58,.06), 0 12px 28px -14px rgba(20,18,58,.34);
+
+  /* --- Motion ----------------------------------------------------------- */
+  --ease: cubic-bezier(.2,.7,.3,1);
+  --dur:  .22s;
+}
+
+/* --- Dark, via OS preference (guarded so an explicit light choice wins) --- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground:        #100e2b;
+    --surface:       #191640;
+    --surface-sunk:  #151235;
+    --slab:          #0b0a1f;
+    --slab-2:        #171441;
+
+    --line:          rgba(255,255,255,.13);
+    --line-strong:   rgba(255,255,255,.26);
+    --line-on-slab:  rgba(255,255,255,.14);
+
+    --text:          #f2effa;
+    --text-soft:     #c2bbdc;
+    --text-mute:     #948cb6;
+    --text-on-slab:      #f5f2fa;
+    --text-on-slab-soft: #bdb6d8;
+    --text-on-slab-mute: #8e87ae;
+
+    --accent:        #ff6f9c;
+    --accent-ink:    #ff96b6;
+    --accent-quiet:  #c07ae8;
+    --on-accent:     #1a0a12;
+    --focus:         #ff6f9c;
+
+    --grad: linear-gradient(96deg, #ff5c8d 0%, #c07ae8 50%, #8f8ff5 100%);
+    --shadow-lift: 0 1px 2px rgba(0,0,0,.4), 0 14px 32px -16px rgba(0,0,0,.7);
+  }
+}
+
+/* --- Dark, via explicit choice ------------------------------------------ */
+:root[data-theme="dark"] {
+  --ground:        #100e2b;
+  --surface:       #191640;
+  --surface-sunk:  #151235;
+  --slab:          #0b0a1f;
+  --slab-2:        #171441;
+
+  --line:          rgba(255,255,255,.13);
+  --line-strong:   rgba(255,255,255,.26);
+  --line-on-slab:  rgba(255,255,255,.14);
+
+  --text:          #f2effa;
+  --text-soft:     #c2bbdc;
+  --text-mute:     #948cb6;
+  --text-on-slab:      #f5f2fa;
+  --text-on-slab-soft: #bdb6d8;
+  --text-on-slab-mute: #8e87ae;
+
+  --accent:        #ff6f9c;
+  --accent-ink:    #ff96b6;
+  --accent-quiet:  #c07ae8;
+  --on-accent:     #1a0a12;
+  --focus:         #ff6f9c;
+
+  --grad: linear-gradient(96deg, #ff5c8d 0%, #c07ae8 50%, #8f8ff5 100%);
+  --shadow-lift: 0 1px 2px rgba(0,0,0,.4), 0 14px 32px -16px rgba(0,0,0,.7);
+}

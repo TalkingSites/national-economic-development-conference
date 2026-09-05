@@ -1,0 +1,12 @@
+{# logos: [{ name, logo, cap }] — one white sheet rather than a box per logo.
+   The supplied logos are drawn for light grounds, so the sheet stays white in
+   both themes; `cap` is the per-logo height cap that evens out visual mass. #}
+<div class="logo-sheet">
+  <ul class="logo-wall">
+    {% for l in logos %}
+    <li class="logo-wall__item">
+      <img src="{{ l.logo }}" alt="{{ l.name }}" style="--cap: {{ l.cap }}px" loading="lazy">
+    </li>
+    {% endfor %}
+  </ul>
+</div>

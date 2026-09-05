@@ -1,0 +1,10 @@
+<section class="section section--sunk" id="program">
+  <div class="wrap stack-l">
+    {% set headHeading = "Program overview" %}
+    {% set headAside = '<p class="util" style="color: var(--text-mute)">Four days, ' + event.city + '</p>' %}
+    {% include "partials/section-head.njk" %}
+    <div class="spine">
+      {% for day in program.days %}{% include "partials/day-band.njk" %}{% endfor %}
+    </div>
+  </div>
+</section>
